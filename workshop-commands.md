@@ -13,7 +13,7 @@ claude
 הדבק את זה ל-Claude Code:
 ```
 תריץ עבורי:
-git clone [REPO-URL] workshop
+git clone https://github.com/yonyosk/claude-code-workshop workshop
 cd workshop
 ```
 
