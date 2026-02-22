@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סדנת Claude Code — Product for Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    <style>
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .reveal h1 {
+            font-size: 1.4em;
+            margin-bottom: 0.2em;
+        }
+
+        .reveal h2 {
+            font-size: 1.15em;
+            color: #42affa;
+            margin-bottom: 0.3em;
+        }
+
+        .reveal h3 {
+            font-size: 1em;
+            color: #42affa;
+        }
+
+        .reveal section {
+            text-align: center;
+        }
+
+        .reveal .center {
+            text-align: center;
+        }
+
+        .reveal ul {
+            text-align: right;
+        }
+
+        .reveal li {
+            margin: 0.2em 0;
+        }
+
+        /* Simple Cards */
+        .visual-card {
+            background: rgba(66, 175, 250, 0.1);
+            border-radius: 8px;
+            padding: 0.5em;
+            margin: 0.3em auto;
+            border: 2px solid #42affa;
+            max-width: 90%;
+        }
+
+        /* Icons */
+        .big-icon {
+            font-size: 1.6em;
+            margin: 0.15em 0;
+        }
+
+        .medium-icon {
+            font-size: 1.1em;
+            margin: 0.08em;
+        }
+
+        /* Timeline */
+        .timeline {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 0.3em 0;
+            gap: 0.3em;
+        }
+
+        .timeline-item {
+            flex: 1;
+            padding: 0.4em;
+            background: rgba(66, 175, 250, 0.1);
+            border-radius: 6px;
+            border-top: 2px solid #42affa;
+        }
+
+        .timeline-day {
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #42affa;
+            margin-bottom: 0.15em;
+        }
+
+        /* Comparison */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.4em;
+            margin: 0.3em 0;
+        }
+
+        .comparison-box {
+            padding: 0.4em;
+            border-radius: 6px;
+        }
+
+        .old-way {
+            background: rgba(255, 107, 107, 0.2);
+            border: 3px solid #ff6b6b;
+        }
+
+        .new-way {
+            background: rgba(81, 207, 102, 0.2);
+            border: 3px solid #51cf66;
+        }
+
+        .comparison-title {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 0.15em;
+        }
+
+        .comparison-time {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 0.2em 0;
+        }
+
+        /* Demo Frame */
+        .demo-frame {
+            background: rgba(66, 175, 250, 0.1);
+            border: 2px dashed #42affa;
+            border-radius: 6px;
+            padding: 0.7em;
+            margin: 0.3em auto;
+            font-size: 0.9em;
+            color: #42affa;
+        }
+
+        /* Tip Grid */
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.3em;
+            margin: 0.3em 0;
+        }
+
+        .tip-card {
+            background: rgba(66, 175, 250, 0.1);
+            padding: 0.35em;
+            border-radius: 6px;
+            border-right: 2px solid #42affa;
+            text-align: right;
+            font-size: 0.7em;
+        }
+
+        .tip-icon {
+            font-size: 1.1em;
+            margin-bottom: 0.08em;
+        }
+
+        .tip-title {
+            font-size: 0.85em;
+            font-weight: bold;
+            color: #42affa;
+            margin: 0.08em 0;
+        }
+
+        /* Hero Message */
+        .hero-message {
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1.25;
+            color: #42affa;
+        }
+
+        /* Next Steps */
+        .next-steps {
+            display: flex;
+            justify-content: space-around;
+            gap: 0.4em;
+            margin: 0.3em 0;
+        }
+
+        .step-card {
+            flex: 1;
+            background: rgba(66, 175, 250, 0.1);
+            padding: 0.4em;
+            border-radius: 6px;
+            border-top: 2px solid #42affa;
+        }
+
+        .step-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #42affa;
+        }
+
+        /* Results Grid */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.4em;
+            margin: 0.3em 0;
+        }
+
+        .result-card {
+            background: rgba(81, 207, 102, 0.1);
+            padding: 0.4em;
+            border-radius: 6px;
+            border: 2px solid #51cf66;
+        }
+
+        .result-icon {
+            font-size: 1.3em;
+            margin-bottom: 0.15em;
+        }
+
+        .result-title {
+            font-size: 0.8em;
+            font-weight: bold;
+            color: #51cf66;
+        }
+
+        /* Highlight */
+        .highlight {
+            color: #42affa;
+            font-weight: bold;
+        }
+
+        .big-number {
+            font-size: 1.5em;
+            color: #42affa;
+            font-weight: bold;
+        }
+
+        /* Reduce paragraph spacing */
+        .reveal p {
+            margin: 0.2em 0;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            font-size: 0.75em;
+            margin: 0.5em auto;
+            max-width: 95%;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #42affa;
+        }
+
+        .reveal .comparison-table th {
+            background: rgba(66, 175, 250, 0.2);
+            padding: 0.4em;
+            border: 1px solid #42affa;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .reveal .comparison-table td {
+            padding: 0.3em;
+            border: 1px solid rgba(66, 175, 250, 0.3);
+            text-align: right;
+        }
+
+        .comparison-table .highlight-col {
+            background: rgba(66, 175, 250, 0.15);
+            font-weight: bold;
+        }
+
+        /* Simple Option Cards */
+        .option-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.6em;
+            max-width: 800px;
+            margin: 1em auto;
+        }
+
+        .option-card {
+            padding: 1em;
+            border-radius: 10px;
+            border: 3px solid;
+        }
+
+        .option-card.claude-ai {
+            background: rgba(0, 200, 150, 0.1);
+            border-color: #00C896;
+        }
+
+        .option-card.ide-tools {
+            background: rgba(255, 149, 0, 0.1);
+            border-color: #FF9500;
+        }
+
+        .option-card .icon {
+            font-size: 3em;
+            margin-bottom: 0.3em;
+        }
+
+        .option-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
+        }
+
+        .option-card .subtitle {
+            font-size: 0.8em;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1 -->
+            <section>
+  <h1>סדנת Claude Code</h1>
+  <h2>Product for Product</h2>
+  <br>
+  <p>בעוד 90 דקות יהיה לכם:</p>
+  <ul>
+    <li>✅ Claude Code מותקן ועובד</li>
+    <li>✅ Toolkit מקצועי מוכן לשימוש</li>
+    <li>✅ דוח עדיפויות באגים מוכן</li>
+    <li>✅ עדכון מוכן לשליחה ל-VP</li>
+  </ul>
+  <br>
+  <p><em>בואו נתחיל 🚀</em></p>
+</section>
+
+            <!-- Slide 2 -->
+            <section>
+  <h2>⚙️ התקנה</h2>
+  <pre><code>npm install -g @anthropic-ai/claude-code</code></pre>
+  <pre><code>claude --version</code></pre>
+  <pre><code>claude</code></pre>
+  <br>
+  <p>בדקו: כתבו <code>שלום, מה שלומך?</code></p>
+  <p>Claude עונה בעברית? ✅ מוכנים!</p>
+</section>
+
+            <!-- Slide 3 -->
+            <section>
+  <h2>📚 מה זה Git ו-GitHub?</h2>
+  <div class="visual-card">
+    <p><strong>Git</strong> = מערכת גרסאות מקומית</p>
+    <p>כמו "היסטוריית שמירות" לכל קובץ</p>
+  </div>
+  <br>
+  <div class="visual-card">
+    <p><strong>GitHub</strong> = המדף המשותף בענן</p>
+    <p>כולם מורידים מאותו מקום, תמיד עדכני</p>
+  </div>
+  <br>
+  <p>🎯 היום: Claude Code יוריד לכם את ה-Toolkit ישירות מ-GitHub</p>
+</section>
+
+            <!-- Slide 4 -->
+            <section>
+  <h2>📥 מורידים את ה-Toolkit</h2>
+  <p>כתבו ב-Claude Code:</p>
+  <pre><code>תריץ עבורי:
+git clone [REPO-URL] workshop
+cd workshop</code></pre>
+  <br>
+  <div class="visual-card">
+    <p class="big-icon">💡</p>
+    <p><em>"שימו לב — לא הקלדתי פקודת git אחת.</em></p>
+    <p><em>Claude Code הריץ אותה בשבילי."</em></p>
+  </div>
+</section>
+
+            <!-- Slide 5 -->
+            <section>
+  <h2>📋 מה זה CLAUDE.md?</h2>
+  <div class="visual-card">
+    <p>🧑‍💼 קיבלתם עובד חדש לצוות</p>
+    <p>אתם נותנים לו מסמך onboarding:</p>
+    <p>מי אנחנו, מה אנחנו בונים, מי הלקוחות</p>
+  </div>
+  <br>
+  <div class="visual-card">
+    <p>📄 <strong>CLAUDE.md = מסמך ה-onboarding של Claude</strong></p>
+    <p>Claude קורא אותו אוטומטית בכל session</p>
+    <p>יודע הכל — <strong>ללא הסבר חוזר</strong></p>
+  </div>
+</section>
+
+            <!-- Slide 6 -->
+            <section>
+  <h2>📁 מבנה הקבצים של Claude Code</h2>
+  <div style="display:flex; justify-content:space-around; gap:1em; font-size:0.75em;">
+    <div class="visual-card" style="flex:1; text-align:right;">
+      <p><strong>~/.claude/</strong></p>
+      <p style="color:#aaa; font-size:0.85em;">רק שלך — כל הפרויקטים</p>
+      <hr style="border-color:#42affa33;">
+      <p>📄 CLAUDE.md</p>
+      <p>🤖 agents/</p>
+      <p>⚡ skills/</p>
+      <p>🧠 projects/.../memory/</p>
+    </div>
+    <div style="display:flex; align-items:center; font-size:1.5em;">↔️</div>
+    <div class="visual-card" style="flex:1; text-align:right;">
+      <p><strong>.claude/</strong></p>
+      <p style="color:#aaa; font-size:0.85em;">משותף עם הצוות — פרויקט אחד</p>
+      <hr style="border-color:#42affa33;">
+      <p>📄 CLAUDE.md</p>
+      <p>🤖 agents/</p>
+      <p>⚡ skills/</p>
+      <p>⚙️ settings.json</p>
+    </div>
+  </div>
+  <br>
+  <p style="font-size:0.8em;">💡 <strong>CLAUDE.md</strong> = אתם כותבים ל-Claude &nbsp;|&nbsp; <strong>Memory</strong> = Claude כותב לעצמו</p>
+</section>
+
+            <!-- Slide 7 -->
+            <section>
+  <h2>🤖 Agents מול Skills</h2>
+  <table style="font-size:0.75em; width:100%; border-collapse: collapse;">
+    <tr style="background: rgba(66,175,250,0.2);">
+      <th style="padding: 8px; border: 1px solid #42affa;"></th>
+      <th style="padding: 8px; border: 1px solid #42affa;">Agents 🤖</th>
+      <th style="padding: 8px; border: 1px solid #42affa;">Skills ⚡</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #555;"><strong>מי מפעיל</strong></td>
+      <td style="padding: 8px; border: 1px solid #555;">Claude מחליט מתי לקרוא</td>
+      <td style="padding: 8px; border: 1px solid #555;">אתם — /skill-name</td>
+    </tr>
+    <tr style="background: rgba(255,255,255,0.05);">
+      <td style="padding: 8px; border: 1px solid #555;"><strong>מתאים ל</strong></td>
+      <td style="padding: 8px; border: 1px solid #555;">ניתוח פתוח, עבודה אוטונומית</td>
+      <td style="padding: 8px; border: 1px solid #555;">תוצר ידוע מראש, תבנית קבועה</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #555;"><strong>דוגמה</strong></td>
+      <td style="padding: 8px; border: 1px solid #555;">"נתח 50 באגים ותעדף"</td>
+      <td style="padding: 8px; border: 1px solid #555;">/write-stakeholder-update</td>
+    </tr>
+  </table>
+  <br>
+  <p>💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק</em></p>
+</section>
+
+            <!-- Slide 8 -->
+            <section>
+  <h2>🤖 הסוכנים שלכם היום</h2>
+  <ul>
+    <li><strong>bug-priority-analyzer</strong><br><small>מנתח באגים ומעדף לפי חומרה והשפעה</small></li>
+    <li><strong>user-feedback-analyzer</strong><br><small>מנתח פידבק משתמשים ומוצא דפוסים</small></li>
+    <li><strong>sprint-backlog-prioritizer</strong><br><small>ממליץ מה להכניס לספרינט הבא</small></li>
+    <li><strong>meeting-summary</strong><br><small>הופך נוטס לסיכום מקצועי עם action items</small></li>
+  </ul>
+  <br>
+  <p>📁 נמצאים ב: <code>.claude/agents/</code></p>
+  <p>⚡ Skills ב: <code>.claude/skills/</code></p>
+</section>
+
+            <!-- Slide 9 -->
+            <section>
+  <h2>⏰ תרחיש יום שני בבוקר</h2>
+  <div class="visual-card">
+    <p>08:30 — פלנינג ספרינט בעוד שעה וחצי</p>
+    <p>50 באגים פתוחים ב-Jira</p>
+    <p>30 פידבקים חדשים ממשתמשים</p>
+    <p>ה-VP שואל: <em>"מה עדיפויות השבוע?"</em></p>
+  </div>
+  <br>
+  <p>🎯 <strong>המשימה שלכם:</strong></p>
+  <p>דוח עדיפויות + עדכון ל-VP</p>
+  <p>בעוד 25 דקות</p>
+  <br>
+  <p class="big-icon">בואו נעשה את זה 💪</p>
+</section>
+
+            <!-- Slide 10 -->
+            <section>
+  <h2>🎉 מה עשיתם היום</h2>
+  <ul>
+    <li>✅ Claude Code מותקן</li>
+    <li>✅ הורדתם Toolkit מ-GitHub</li>
+    <li>✅ הבנתם CLAUDE.md, Agents ו-Skills</li>
+    <li>✅ דוח עדיפויות ב-3 דקות</li>
+    <li>✅ עדכון ל-VP מוכן לשליחה</li>
+  </ul>
+  <br>
+  <p>🎯 <strong>מחר בבוקר:</strong></p>
+  <p>פתחו Claude Code עם הפרויקט האמיתי שלכם</p>
+  <p>שנו את CLAUDE.md → והתחילו</p>
+  <br>
+  <p>🔗 ה-Toolkit: <code>[REPO-URL]</code></p>
+</section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            center: true,
+            rtl: false,
+            slideNumber: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            plugins: [RevealNotes],
+            width: 1000,
+            height: 550,
+            margin: 0.02,
+            minScale: 0.2,
+            maxScale: 1.5,
+            keyboard: {
+                37: 'prev',
+                39: 'next',
+                38: 'prev',
+                40: 'next'
+            },
+            navigationMode: 'linear',
+            // Enable mouse click to advance slides
+            controlsLayout: 'bottom-right',
+            controlsBackArrows: 'faded'
+        });
+
+        // Add click listener to advance slides on mouse click
+        document.querySelector('.reveal').addEventListener('click', function (event) {
+            // Don't advance if clicking on links or interactive elements
+            if (event.target.tagName !== 'A' &&
+                event.target.tagName !== 'BUTTON' &&
+                !event.target.closest('a') &&
+                !event.target.closest('button')) {
+                Reveal.next();
+            }
+        });
+    </script>
+</body>
+
+</html>
