@@ -22,233 +22,164 @@
 
         .reveal h1 {
             font-size: 1.4em;
-            margin-bottom: 0.2em;
+            margin-top: 0;
+            margin-bottom: 0.15em;
         }
 
         .reveal h2 {
-            font-size: 1.15em;
+            font-size: 1.05em;
             color: #42affa;
-            margin-bottom: 0.3em;
+            margin-top: 0;
+            margin-bottom: 0.15em;
         }
 
         .reveal h3 {
-            font-size: 1em;
+            font-size: 0.9em;
             color: #42affa;
+            margin-bottom: 0.1em;
+            margin-top: 0.1em;
         }
 
         .reveal section {
             text-align: center;
         }
 
-        .reveal .center {
-            text-align: center;
+        .reveal .center { text-align: center; }
+
+        .reveal ul { text-align: right; }
+
+        .reveal li { margin: 0.15em 0; }
+
+        .reveal p { margin: 0.15em 0; }
+
+        /* ── Badge labels ──────────────────────── */
+        .hands-on-badge {
+            display: inline-block;
+            background: rgba(81, 207, 102, 0.3);
+            border: 2px solid #51cf66;
+            padding: 0.1em 0.35em;
+            border-radius: 5px;
+            font-size: 0.6em;
+            font-weight: bold;
+            color: #51cf66;
+            margin-right: 0.4em;
+            vertical-align: middle;
         }
 
-        .reveal ul {
-            text-align: right;
+        .explain-badge {
+            display: inline-block;
+            background: rgba(255, 149, 0, 0.3);
+            border: 2px solid #FF9500;
+            padding: 0.1em 0.35em;
+            border-radius: 5px;
+            font-size: 0.6em;
+            font-weight: bold;
+            color: #FF9500;
+            margin-right: 0.4em;
+            vertical-align: middle;
         }
 
-        .reveal li {
-            margin: 0.2em 0;
+        /* ── Code box ──────────────────────────── */
+        .code-box {
+            background: rgba(0, 0, 0, 0.55);
+            border: 2px solid #42affa;
+            border-radius: 5px;
+            padding: 0.3em 0.5em;
+            margin: 0.15em auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.72em;
+            text-align: left;
+            max-width: 90%;
+            direction: ltr;
         }
 
-        /* Simple Cards */
+        /* ── Cards & boxes ─────────────────────── */
         .visual-card {
             background: rgba(66, 175, 250, 0.1);
-            border-radius: 8px;
-            padding: 0.5em;
-            margin: 0.3em auto;
+            border-radius: 6px;
+            padding: 0.3em 0.4em;
+            margin: 0.15em auto;
             border: 2px solid #42affa;
             max-width: 90%;
         }
 
-        /* Icons */
-        .big-icon {
-            font-size: 1.6em;
-            margin: 0.15em 0;
-        }
-
-        .medium-icon {
-            font-size: 1.1em;
-            margin: 0.08em;
-        }
-
-        /* Timeline */
-        .timeline {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-            margin: 0.3em 0;
-            gap: 0.3em;
-        }
-
-        .timeline-item {
-            flex: 1;
-            padding: 0.4em;
+        .step-card {
             background: rgba(66, 175, 250, 0.1);
-            border-radius: 6px;
-            border-top: 2px solid #42affa;
+            padding: 0.25em 0.4em;
+            border-radius: 5px;
+            border-right: 3px solid #42affa;
+            text-align: right;
+            margin: 0.12em auto;
+            max-width: 90%;
+            font-size: 0.8em;
+            line-height: 1.25;
         }
 
-        .timeline-day {
-            font-size: 0.9em;
-            font-weight: bold;
-            color: #42affa;
-            margin-bottom: 0.15em;
-        }
-
-        /* Comparison */
-        .comparison {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.4em;
-            margin: 0.3em 0;
-        }
-
-        .comparison-box {
-            padding: 0.4em;
-            border-radius: 6px;
-        }
-
-        .old-way {
-            background: rgba(255, 107, 107, 0.2);
-            border: 3px solid #ff6b6b;
-        }
-
-        .new-way {
-            background: rgba(81, 207, 102, 0.2);
-            border: 3px solid #51cf66;
-        }
-
-        .comparison-title {
+        .step-number {
             font-size: 1em;
             font-weight: bold;
-            margin-bottom: 0.15em;
-        }
-
-        .comparison-time {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin: 0.2em 0;
-        }
-
-        /* Demo Frame */
-        .demo-frame {
-            background: rgba(66, 175, 250, 0.1);
-            border: 2px dashed #42affa;
-            border-radius: 6px;
-            padding: 0.7em;
-            margin: 0.3em auto;
-            font-size: 0.9em;
             color: #42affa;
+            margin-left: 0.25em;
         }
 
-        /* Tip Grid */
+        .warning-box {
+            background: rgba(255, 107, 107, 0.18);
+            border: 2px solid #ff6b6b;
+            border-radius: 5px;
+            padding: 0.2em 0.4em;
+            margin: 0.12em auto;
+            max-width: 90%;
+        }
+
+        .success-box {
+            background: rgba(81, 207, 102, 0.18);
+            border: 2px solid #51cf66;
+            border-radius: 5px;
+            padding: 0.2em 0.4em;
+            margin: 0.12em auto;
+            max-width: 90%;
+        }
+
+        .exercise-box {
+            background: rgba(255, 215, 0, 0.12);
+            border: 2px dashed #FFD700;
+            border-radius: 5px;
+            padding: 0.25em 0.4em;
+            margin: 0.15em auto;
+            max-width: 90%;
+        }
+
+        .exercise-title {
+            font-size: 0.75em;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 0.1em;
+        }
+
+        /* ── Tip grid ──────────────────────────── */
         .tip-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.3em;
-            margin: 0.3em 0;
+            gap: 0.2em;
+            margin: 0.15em 0;
         }
 
         .tip-card {
             background: rgba(66, 175, 250, 0.1);
-            padding: 0.35em;
-            border-radius: 6px;
+            padding: 0.25em;
+            border-radius: 5px;
             border-right: 2px solid #42affa;
             text-align: right;
-            font-size: 0.7em;
+            font-size: 0.68em;
+            line-height: 1.2;
         }
 
-        .tip-icon {
-            font-size: 1.1em;
-            margin-bottom: 0.08em;
-        }
+        .tip-icon { font-size: 1em; margin-bottom: 0.05em; }
 
-        .tip-title {
-            font-size: 0.85em;
-            font-weight: bold;
-            color: #42affa;
-            margin: 0.08em 0;
-        }
-
-        /* Hero Message */
-        .hero-message {
-            font-size: 1.2em;
-            font-weight: bold;
-            line-height: 1.25;
-            color: #42affa;
-        }
-
-        /* Next Steps */
-        .next-steps {
-            display: flex;
-            justify-content: space-around;
-            gap: 0.4em;
-            margin: 0.3em 0;
-        }
-
-        .step-card {
-            flex: 1;
-            background: rgba(66, 175, 250, 0.1);
-            padding: 0.4em;
-            border-radius: 6px;
-            border-top: 2px solid #42affa;
-        }
-
-        .step-number {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #42affa;
-        }
-
-        /* Results Grid */
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0.4em;
-            margin: 0.3em 0;
-        }
-
-        .result-card {
-            background: rgba(81, 207, 102, 0.1);
-            padding: 0.4em;
-            border-radius: 6px;
-            border: 2px solid #51cf66;
-        }
-
-        .result-icon {
-            font-size: 1.3em;
-            margin-bottom: 0.15em;
-        }
-
-        .result-title {
-            font-size: 0.8em;
-            font-weight: bold;
-            color: #51cf66;
-        }
-
-        /* Highlight */
-        .highlight {
-            color: #42affa;
-            font-weight: bold;
-        }
-
-        .big-number {
-            font-size: 1.5em;
-            color: #42affa;
-            font-weight: bold;
-        }
-
-        /* Reduce paragraph spacing */
-        .reveal p {
-            margin: 0.2em 0;
-        }
-
-        /* Comparison Table */
+        /* ── Comparison table ──────────────────── */
         .comparison-table {
             font-size: 0.75em;
-            margin: 0.5em auto;
+            margin: 0.4em auto;
             max-width: 95%;
         }
 
@@ -260,14 +191,14 @@
 
         .reveal .comparison-table th {
             background: rgba(66, 175, 250, 0.2);
-            padding: 0.4em;
+            padding: 0.35em;
             border: 1px solid #42affa;
             font-weight: bold;
             text-align: right;
         }
 
         .reveal .comparison-table td {
-            padding: 0.3em;
+            padding: 0.28em;
             border: 1px solid rgba(66, 175, 250, 0.3);
             text-align: right;
         }
@@ -277,45 +208,74 @@
             font-weight: bold;
         }
 
-        /* Simple Option Cards */
-        .option-grid {
+        /* ── Before / After ────────────────────── */
+        .comparison-pair {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.6em;
-            max-width: 800px;
-            margin: 1em auto;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.4em;
+            margin: 0.3em auto;
+            max-width: 90%;
         }
 
-        .option-card {
-            padding: 1em;
-            border-radius: 10px;
-            border: 3px solid;
+        .before-box {
+            background: rgba(255, 107, 107, 0.15);
+            border: 2px solid #ff6b6b;
+            border-radius: 6px;
+            padding: 0.35em;
         }
 
-        .option-card.claude-ai {
-            background: rgba(0, 200, 150, 0.1);
-            border-color: #00C896;
+        .after-box {
+            background: rgba(81, 207, 102, 0.15);
+            border: 2px solid #51cf66;
+            border-radius: 6px;
+            padding: 0.35em;
         }
 
-        .option-card.ide-tools {
-            background: rgba(255, 149, 0, 0.1);
-            border-color: #FF9500;
+        .box-time {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 0.15em 0;
         }
 
-        .option-card .icon {
-            font-size: 3em;
-            margin-bottom: 0.3em;
+        /* ── Results grid ──────────────────────── */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.3em;
+            margin: 0.25em 0;
         }
 
-        .option-card h3 {
-            font-size: 1.2em;
-            margin-bottom: 0.2em;
+        .result-card {
+            background: rgba(81, 207, 102, 0.1);
+            padding: 0.35em;
+            border-radius: 6px;
+            border: 2px solid #51cf66;
         }
 
-        .option-card .subtitle {
-            font-size: 0.8em;
-            color: #aaa;
+        .result-icon { font-size: 1.2em; margin-bottom: 0.1em; }
+
+        .result-title {
+            font-size: 0.75em;
+            font-weight: bold;
+            color: #51cf66;
         }
+
+        /* ── Demo frame ────────────────────────── */
+        .demo-frame {
+            background: rgba(66, 175, 250, 0.08);
+            border: 2px dashed #42affa;
+            border-radius: 6px;
+            padding: 0.5em 0.7em;
+            margin: 0.2em auto;
+            color: #fff;
+            max-width: 90%;
+        }
+
+        /* ── Misc ──────────────────────────────── */
+        .big-icon { font-size: 1.5em; margin: 0.1em 0; }
+        .medium-icon { font-size: 1em; margin: 0.05em; }
+        .highlight { color: #42affa; font-weight: bold; }
+        .hero-message { font-size: 1.1em; font-weight: bold; line-height: 1.25; color: #42affa; }
     </style>
 </head>
 
@@ -323,7 +283,9 @@
     <div class="reveal">
         <div class="slides">
 
-            <!-- Slide 1: Opening -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 1: Opening
+            ════════════════════════════════════════════════ -->
             <section class="center">
                 <h1>סדנת Claude Code</h1>
                 <div class="fragment">
@@ -331,49 +293,45 @@
                     <h3 style="margin-top: 0.3em;">Product for Product</h3>
                 </div>
                 <div class="fragment" style="margin-top: 0.5em;">
-                    <p style="font-size: 0.9em;">בעוד 90 דקות יהיה לכם:</p>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.3em; max-width: 700px; margin: 0.3em auto; font-size: 0.85em;">
-                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Claude Code מותקן ועובד</div>
-                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Toolkit מקצועי מ-GitHub</div>
-                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ דוח עדיפויות באגים</div>
-                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ עדכון מוכן לשליחה ל-VP</div>
+                    <p style="font-size: 0.85em; margin-bottom: 0.3em;">בעוד 90 דקות יהיה לכם:</p>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.25em; max-width: 680px; margin: 0 auto; font-size: 0.8em;">
+                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Claude Code מותקן ועובד</div>
+                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Toolkit מקצועי מ-GitHub</div>
+                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ 50 באגים → דוח עדיפויות ב-3 דקות</div>
+                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ כלי שתשתמשו בו מחר בבוקר</div>
                     </div>
                 </div>
-                <p class="fragment" style="margin-top: 0.5em; font-size: 0.95em;">יונתן קרמר | Product as a Service</p>
+                <p class="fragment" style="margin-top: 0.5em; font-size: 0.9em;">יונתן קרמר | Product &amp; Builder as a Service</p>
                 <aside class="notes">
-                    פתיחה דרמטית — קראו את ה-4 הישגים בקול.
-                    "תוך 90 דקות תצאו מכאן עם כלי עבודה שישנה את שני שלכם בבוקר."
-                    המתינו 2-3 שניות אחרי כל fragment.
+                    פתיחה — קראו את ה-4 הישגים בקול ברור.
+                    "לא מצגת. לא יאלה. היום אנחנו עושים."
+                    המתינו לכל fragment לפני המעבר.
                 </aside>
             </section>
 
-            <!-- Slide 2: About Me -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 2: About Me
+            ════════════════════════════════════════════════ -->
             <section>
                 <h2>קצת עליי 👤</h2>
-                <div style="display: grid; grid-template-columns: 250px 1fr; gap: 1em; align-items: start; max-width: 850px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 240px 1fr; gap: 1em; align-items: start; max-width: 850px; margin: 0 auto;">
                     <div style="text-align: center;">
                         <img src="images/lego-me.png" alt="יונתן קרמר"
-                            style="max-width: 250px; height: auto; border-radius: 12px;">
+                            style="max-width: 230px; height: auto; border-radius: 12px;">
                     </div>
                     <div style="text-align: right;">
                         <h3 style="text-align: right; margin: 0 0 0.1em 0; font-size: 1em;">יונתן קרמר</h3>
-                        <p style="font-size: 0.75em; margin: 0.05em 0;">
-                            <strong>Product as a Service</strong>
-                        </p>
-                        <p style="font-size: 0.65em; margin: 0.05em 0; color: #ccc;">
-                            10+ שנות ניסיון, בעיקר בעולמות B2B
-                        </p>
+                        <p style="font-size: 0.75em; margin: 0.05em 0;"><strong>Product &amp; Builder as a Service</strong></p>
+                        <p style="font-size: 0.65em; margin: 0.05em 0; color: #ccc;">10+ שנות ניסיון, בעיקר בעולמות B2B</p>
 
-                        <div class="fragment"
-                            style="margin-top: 0.3em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
+                        <div class="fragment" style="margin-top: 0.3em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
                             <p style="font-size: 0.65em; margin: 0.1em 0; line-height: 1.3;">
                                 <strong>כיום:</strong><br>
                                 עבודות מוצר לעסקים קטנים, בניית אוטומציות ואינטגרציות עם AI
                             </p>
                         </div>
 
-                        <div class="fragment"
-                            style="margin-top: 0.2em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
+                        <div class="fragment" style="margin-top: 0.2em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
                             <p style="font-size: 0.6em; margin: 0.05em 0; line-height: 1.3; color: #bbb;">
                                 <strong>תעשיות קודמות:</strong><br>
                                 • סינון והגנה באינטרנט<br>
@@ -384,154 +342,392 @@
                     </div>
                 </div>
                 <aside class="notes">
-                    "קצת עליי כדי שתדעו מי מדבר. 10 שנות ניסיון בניהול מוצר, בעיקר B2B.
-                    היום אני עובד כיועץ עצמאי — עוזר לחברות עם ניהול מוצר ואוטומציה באמצעות AI."
+                    "10 שנות ניסיון בניהול מוצר B2B. היום יועץ עצמאי — מוצר, אוטומציה, AI."
+                    קצר — 30 שניות מקסימום.
                 </aside>
             </section>
 
-            <!-- Slide 3: Installation -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 3: Installation
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>⚙️ התקנה — 3 שלבים</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-day">שלב 1 — התקנה</div>
-                        <span class="medium-icon">📦</span>
-                        <pre style="font-size: 0.65em; text-align: left; background: rgba(0,0,0,0.3); padding: 0.4em; border-radius: 4px; margin: 0.3em 0; direction: ltr;"><code>npm install -g @anthropic-ai/claude-code</code></pre>
-                        <p style="font-size: 0.7em; color: #ccc;">דרוש: Node.js 18+</p>
+                <h2><span class="hands-on-badge">✋ ביחד</span> התקנה 💻</h2>
+
+                <div class="fragment">
+                    <h3>macOS / Linux / WSL:</h3>
+                    <div class="code-box">curl -fsSL https://claude.ai/install.sh | bash</div>
+                </div>
+
+                <div class="fragment" style="margin-top: 0.1em;">
+                    <h3>Windows PowerShell:</h3>
+                    <div class="code-box">irm https://claude.ai/install.ps1 | iex</div>
+                </div>
+
+                <div class="fragment" style="margin-top: 0.1em;">
+                    <h3>Windows CMD:</h3>
+                    <div class="code-box" style="font-size: 0.6em;">curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd</div>
+                </div>
+
+                <div class="fragment" style="margin-top: 0.15em;">
+                    <div class="warning-box">
+                        <p style="font-size: 0.7em; line-height: 1.35; margin: 0;">
+                            ⚠️ <strong>Windows</strong>: אחרי ההתקנה — סגרו ופתחו מחדש את הטרמינל<br>
+                            ⚠️ <strong>Mac</strong>: הסקריפט יציג פקודה נוספת — הריצו אותה, ואז סגרו ופתחו מחדש
+                        </p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-day">שלב 2 — הפעלה</div>
-                        <span class="medium-icon">🔐</span>
-                        <pre style="font-size: 0.65em; text-align: left; background: rgba(0,0,0,0.3); padding: 0.4em; border-radius: 4px; margin: 0.3em 0; direction: ltr;"><code>claude</code></pre>
-                        <p style="font-size: 0.7em; color: #ccc;">כניסה עם חשבון Claude Pro</p>
+                </div>
+
+                <div class="exercise-box fragment" style="margin-top: 0.12em;">
+                    <p class="exercise-title">⏱️ עכשיו מתקינים — 5 דקות. תרימו יד אם תקועים!</p>
+                </div>
+
+                <aside class="notes">
+                    עצרו כאן! זה הזמן להתקנה.
+                    הסתובבו בין המשתתפים, עזרו למי שתקוע.
+                    Windows: PATH לא מתעדכן עד שסוגרים את הטרמינל — זו הטעות הכי נפוצה.
+                    Mac: הסקריפט מדפיס משהו כמו "source ~/.zshrc" — חייבים להריץ אותו.
+                    אל תמשיכו בלי שכולם מתקינים.
+                </aside>
+            </section>
+
+            <!-- ═══════════════════════════════════════════════
+                 Slide 4: First Steps – open terminal in folder
+            ════════════════════════════════════════════════ -->
+            <section>
+                <h2><span class="hands-on-badge">✋ ביחד</span> צעדים ראשונים 🎯</h2>
+
+                <div style="max-width: 860px; margin: 0 auto;">
+                    <div class="step-card fragment">
+                        <span class="step-number">1</span>
+                        בדקו שההתקנה עבדה:
+                        <div class="code-box" style="margin-top: 0.1em; font-size: 0.85em;">claude --version</div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-day">שלב 3 — בדיקה</div>
-                        <span class="medium-icon">✅</span>
-                        <div style="font-size: 0.75em; margin: 0.3em 0; background: rgba(0,0,0,0.3); padding: 0.4em; border-radius: 4px;">
-                            שלום, מה שלומך?
+
+                    <div class="step-card fragment">
+                        <span class="step-number">2</span>
+                        צרו תיקייה לסדנה (בשם <strong>workshop</strong>) ופתחו בה טרמינל חדש
+                        <div style="font-size: 0.8em; color: #aaa; margin-top: 0.1em;">
+                            Windows: ניווט לתיקייה → Shift + לחיצה ימנית → "Open in Terminal"<br>
+                            Mac: ניווט לתיקייה → Terminal → <code style="font-size:0.9em;">cd ~/Desktop/workshop</code>
                         </div>
-                        <p style="font-size: 0.7em; color: #51cf66;">Claude עונה בעברית? מוכנים! 🎉</p>
+                    </div>
+
+                    <div class="step-card fragment">
+                        <span class="step-number">3</span>
+                        הפעילו את Claude Code מתוך התיקייה:
+                        <div class="code-box" style="margin-top: 0.1em; font-size: 0.85em;">claude</div>
+                        <div style="font-size: 0.8em; color: #ccc;">בפעם הראשונה — הדפדפן ייפתח לכניסה עם חשבון Claude Pro</div>
+                    </div>
+
+                    <div class="exercise-box fragment" style="margin-top: 0.15em;">
+                        <p class="exercise-title">⏱️ תרגיל: שלחו "שלום, מה שלומך?" — Claude עונה בעברית? 🎉</p>
                     </div>
                 </div>
-                <div class="fragment visual-card" style="margin-top: 0.4em;">
-                    <p style="font-size: 0.85em;">💡 בפעם הראשונה — הדפדפן ייפתח לאישור הכניסה. זה תקין!</p>
-                </div>
+
                 <aside class="notes">
-                    עברו על 3 השלבים לאט.
-                    שלב 1: "זה npm — מנהל החבילות של Node.js. כמו App Store לקוד."
-                    שלב 2: "claude ללא פרמטרים — מפעיל את הממשק. בפעם הראשונה פותח דפדפן לכניסה."
-                    שלב 3: "תבדקו בעברית — אם עונה בעברית, הכל עובד."
-                    המתינו שכולם מצליחים לפני שממשיכים.
+                    הדגישו: Claude חייב לרוץ מתוך תיקיית הפרויקט. זו הטעות הנפוצה ביותר.
+                    שלב 2: Windows — Shift + לחיצה ימנית על תיקייה נותן "Open PowerShell here".
+                    Mac — אפשר גם לגרור את התיקייה לאייקון הטרמינל.
+                    בפעם הראשונה: Claude יבקש לאשר גישה — כן לכל מה שהוא מבקש.
                 </aside>
             </section>
 
-            <!-- Slide 4: Git & GitHub -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 5: Permissions System
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>📚 מה זה Git ו-GitHub?</h2>
-                <div class="visual-card fragment">
-                    <p style="font-size: 1em;"><strong>Git</strong> = מערכת גרסאות מקומית</p>
-                    <p style="font-size: 0.85em; color: #ccc;">כמו "היסטוריית שמירות" לכל קובץ</p>
-                    <p style="font-size: 0.75em; margin-top: 0.2em;">📖 Google Docs — "ראה גרסאות קודמות" — רק לקבצים</p>
+                <h2><span class="explain-badge">📖 הסבר</span> מערכת ההרשאות 🔐</h2>
+
+                <div style="max-width: 860px; margin: 0.2em auto;">
+                    <div class="fragment">
+                        <h3>Claude תמיד ישאל אישור ל:</h3>
+                        <div class="step-card">✅ כתיבה ועריכה של קבצים</div>
+                        <div class="step-card">✅ הרצת פקודות (bash, git, npm...)</div>
+                        <div class="step-card">✅ מחיקת קבצים</div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.15em;">
+                        <div class="success-box">
+                            <p style="font-size: 0.75em; line-height: 1.3; margin: 0;">
+                                📖 קריאת קבצים — אוטומטי, ללא שאלה<br>
+                                🔍 חיפוש בקבצים — אוטומטי, ללא שאלה
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.12em;">
+                        <div class="warning-box" style="display: flex; gap: 0.5em; align-items: center; justify-content: center;">
+                            <span style="font-size: 1.3em;">🛑</span>
+                            <p style="font-size: 0.8em; margin: 0;"><strong>Ctrl + C</strong> עוצר את Claude בכל רגע</p>
+                        </div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.12em;">
+                        <div class="visual-card">
+                            <p style="font-size: 0.75em; margin: 0;">💡 תמיד תקראו מה Claude מתכנן לעשות לפני שמאשרים</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="visual-card fragment">
-                    <p style="font-size: 1em;"><strong>GitHub</strong> = המדף המשותף בענן</p>
-                    <p style="font-size: 0.85em; color: #ccc;">כולם מורידים מאותו מקום, תמיד עדכני</p>
-                    <p style="font-size: 0.75em; margin-top: 0.2em;">📁 כמו Google Drive — רק לקוד</p>
-                </div>
-                <div class="fragment" style="margin-top: 0.5em;">
-                    <p class="hero-message" style="font-size: 1em;">🎯 היום: Claude Code יוריד לכם את ה-Toolkit ישירות מ-GitHub</p>
-                </div>
+
                 <aside class="notes">
-                    "לא צריכים לזכור פקודות git. Claude Code ינהל אותן בשבילכם."
-                    "אבל חשוב להבין למה GitHub — כי זה מאיפה נוריד את הכלים שלכם."
+                    "Claude לא עושה דברים מאחורי הגב. הכל שקוף."
+                    הראו דוגמה של חלון האישור אם אפשר.
+                    Ctrl+C — חשוב כשClaude עושה משהו לא נכון.
+                    "אפשר גם לכתוב 'n' לסרב לפעולה ספציפית."
                 </aside>
             </section>
 
-            <!-- Slide 5: Clone via Claude Code -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 6: Git & GitHub
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>📥 מורידים את ה-Toolkit</h2>
-                <p style="font-size: 0.9em; margin-bottom: 0.3em;">כתבו ב-Claude Code:</p>
-                <div class="demo-frame" style="text-align: left; direction: ltr; font-size: 0.85em; max-width: 750px; margin: 0 auto;">
-                    תריץ עבורי:<br>
-                    git clone https://github.com/yonyosk/claude-code-workshop workshop<br>
-                    cd workshop
+                <h2><span class="explain-badge">📖 הסבר</span> Git ו-GitHub בקצרה 📚</h2>
+
+                <div style="max-width: 860px; margin: 0.2em auto;">
+                    <div class="fragment">
+                        <div class="visual-card">
+                            <p style="font-size: 0.9em; font-weight: bold; color: #42affa; margin-bottom: 0.15em;">Git = היסטוריית גרסאות אוטומטית</p>
+                            <p style="font-size: 0.78em; margin: 0;">
+                                במקום <code>proposal_FINAL_v3_USE_THIS_ONE.docx</code><br>
+                                כל שינוי מקבל תווית, תאריך, ומי שינה — ואפשר תמיד לחזור אחורה
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.2em;">
+                        <div class="visual-card">
+                            <p style="font-size: 0.9em; font-weight: bold; color: #42affa; margin-bottom: 0.15em;">Branches = גרסאות מקבילות</p>
+                            <div style="display: flex; justify-content: space-around; align-items: center; font-size: 0.75em; margin-top: 0.1em;">
+                                <div style="text-align: center;">
+                                    <div style="background: rgba(81,207,102,0.2); border: 1px solid #51cf66; border-radius: 4px; padding: 0.2em 0.5em; font-weight: bold;">main</div>
+                                    <div style="color: #51cf66; font-size: 0.85em; margin-top: 0.1em;">מאושר, יציב</div>
+                                </div>
+                                <div style="font-size: 1.5em; color: #555;">↔</div>
+                                <div style="text-align: center;">
+                                    <div style="background: rgba(255,149,0,0.2); border: 1px solid #FF9500; border-radius: 4px; padding: 0.2em 0.5em;">feature/login</div>
+                                    <div style="color: #FF9500; font-size: 0.85em; margin-top: 0.1em;">בפיתוח, טרם אושר</div>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.73em; margin-top: 0.15em;">כשה-branch מוכן ועבר review → ממזגים ל-main</p>
+                        </div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.2em;">
+                        <div class="success-box">
+                            <p style="font-size: 0.78em; margin: 0;">
+                                ☁️ <strong>GitHub</strong> = המקום בענן שמאחסן את ה-repository<br>
+                                היום נוריד את ה-Toolkit מה-<strong>main</strong> branch — הגרסה המאושרת
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="fragment visual-card" style="margin-top: 0.6em;">
+
+                <aside class="notes">
+                    "Git פותר את בעיית ה-v3_FINAL_USE_THIS שכולם מכירים."
+                    Branches: "PMs נתקלים בזה ב-PR reviews. main = production. feature branches = עבודה בתהליך."
+                    "Claude Code מנהל את כל פקודות ה-git בשבילכם — לא תצטרכו לזכור אף פקודה."
+                </aside>
+            </section>
+
+            <!-- ═══════════════════════════════════════════════
+                 Slide 7: Clone via Claude Code
+            ════════════════════════════════════════════════ -->
+            <section>
+                <h2><span class="hands-on-badge">✋ ביחד</span> מורידים את ה-Toolkit 📥</h2>
+
+                <p style="font-size: 0.85em; margin-bottom: 0.3em;">כתבו ב-Claude Code בדיוק כך:</p>
+
+                <div class="demo-frame" style="text-align: left; direction: ltr; font-size: 0.9em; max-width: 760px; margin: 0 auto;">
+                    Download and set up the GitHub project at<br>
+                    https://github.com/yonyosk/claude-code-workshop
+                </div>
+
+                <div class="fragment visual-card" style="margin-top: 0.5em;">
                     <p class="big-icon">💡</p>
-                    <p><em>"שימו לב — לא הקלדתי פקודת git אחת.</em></p>
-                    <p><em>Claude Code הריץ אותה בשבילי."</em></p>
+                    <p style="font-size: 0.9em;"><em>"שימו לב — לא הקלדתי פקודת git אחת.</em></p>
+                    <p style="font-size: 0.9em;"><em>אמרתי מה אני רוצה. Claude Code הבין ועשה."</em></p>
                 </div>
+
+                <div class="exercise-box fragment" style="margin-top: 0.2em;">
+                    <p class="exercise-title">⏱️ אחרי שהסיים — כתבו: "תקרא את CLAUDE.md ותסכם לי את הפרויקט"</p>
+                </div>
+
                 <aside class="notes">
                     זה הרגע הראשון של "וואו".
-                    הדגישו: "אני נתתי הוראה בעברית. Claude Code תירגם אותה לפקודות git ורץ."
-                    "זו בדיוק הנקודה — אתם מדברים, הוא עושה."
+                    "אני נתתי הוראה בעברית פשוטה. Claude תירגם לפקודות git, הריץ, בדק שהכל עבד."
+                    תנו להם זמן לראות מה Claude מבצע — האישורים, הפלט, הקבצים שנוצרו.
+                    אחרי ה-clone: "תקרא את CLAUDE.md ותסכם" — Claude מבין מיד מה הפרויקט.
                 </aside>
             </section>
 
-            <!-- Slide 6: CLAUDE.md -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 8: Keyboard Shortcuts + Common Mistakes
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>📋 מה זה CLAUDE.md?</h2>
-                <div class="visual-card fragment">
-                    <p style="font-size: 1em;">🧑‍💼 קיבלתם עובד חדש לצוות</p>
-                    <p style="font-size: 0.85em; color: #ccc;">אתם נותנים לו מסמך onboarding:<br>
-                    מי אנחנו, מה אנחנו בונים, מי הלקוחות</p>
+                <h2><span class="explain-badge">📖 הסבר</span> לפני שממשיכים ⚡</h2>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6em; max-width: 880px; margin: 0.2em auto;">
+
+                    <div class="fragment">
+                        <h3>קיצורי מקלדת</h3>
+                        <div class="step-card" style="background: rgba(81,207,102,0.12); border-color: #51cf66;">
+                            <strong>Ctrl + G</strong><br>
+                            <span style="font-size: 0.85em;">כתיבה בעברית + עורך טקסט נוח</span>
+                        </div>
+                        <div class="step-card" style="background: rgba(255,107,107,0.12); border-color: #ff6b6b; margin-top: 0.1em;">
+                            <strong>Ctrl + C</strong><br>
+                            <span style="font-size: 0.85em;">עצור את Claude באמצע</span>
+                        </div>
+                    </div>
+
+                    <div class="fragment">
+                        <h3>טעויות נפוצות ⚠️</h3>
+                        <div class="warning-box">
+                            <p style="font-size: 0.7em; line-height: 1.3; margin: 0;">
+                                ❌ להריץ Claude מהome directory<br>
+                                → <strong>תמיד מתיקיית הפרויקט!</strong>
+                            </p>
+                        </div>
+                        <div class="warning-box" style="margin-top: 0.1em;">
+                            <p style="font-size: 0.7em; line-height: 1.3; margin: 0;">
+                                ❌ הוראות מעורפלות<br>
+                                → <strong>ספציפיים = תוצאות טובות</strong>
+                            </p>
+                        </div>
+                        <div class="warning-box" style="margin-top: 0.1em;">
+                            <p style="font-size: 0.7em; line-height: 1.3; margin: 0;">
+                                ❌ לאשר בלי לקרוא<br>
+                                → <strong>תמיד תקראו מה Claude עושה</strong>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="fragment" style="margin-top: 0.4em;">
-                    <div style="background: rgba(66,175,250,0.2); border: 2px solid #42affa; border-radius: 8px; padding: 0.5em; max-width: 80%; margin: 0 auto;">
-                        <p style="font-size: 0.95em;">📄 <strong>CLAUDE.md = מסמך ה-onboarding של Claude</strong></p>
-                        <p style="font-size: 0.8em; color: #ccc; margin-top: 0.2em;">Claude קורא אותו אוטומטית בכל session</p>
-                        <p style="font-size: 0.8em; color: #51cf66;">יודע הכל — <strong>ללא הסבר חוזר</strong></p>
+
+                <aside class="notes">
+                    Ctrl+G: "הכי שימושי לקהל שלנו — עברית ישירה בטרמינל."
+                    Ctrl+C: "אל תפחדו לעצור — הכלי לא קורס."
+                    טעויות: "90% מהבעיות שראיתי בסדנאות הן מהome directory."
+                </aside>
+            </section>
+
+            <!-- ═══════════════════════════════════════════════
+                 Slide 9: CLAUDE.md
+            ════════════════════════════════════════════════ -->
+            <section>
+                <h2><span class="explain-badge">📖 הסבר</span> מה זה CLAUDE.md? 📄</h2>
+
+                <div style="max-width: 860px; margin: 0.2em auto;">
+                    <div class="fragment">
+                        <div class="visual-card">
+                            <p style="font-size: 0.95em; font-weight: bold; color: #42affa; margin-bottom: 0.1em;">הוראות קבועות שחוזרות על עצמן</p>
+                            <p style="font-size: 0.78em; margin: 0;">
+                                "תמיד כתוב בעברית"<br>
+                                "תמיד כלול שאלות פתוחות בכל מסמך"<br>
+                                "השתמש ב-RICE לתעדוף"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.2em;">
+                        <div class="tip-grid">
+                            <div class="tip-card">
+                                <div class="tip-icon">🎯</div>
+                                <strong>הקשר הפרויקט</strong><br>
+                                מה בונים, מי המשתמשים, מי הסטייקהולדרים
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">📐</div>
+                                <strong>סטנדרטים</strong><br>
+                                פורמטים, שפה, רמת פירוט
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">🚫</div>
+                                <strong>גבולות</strong><br>
+                                מה לא לגעת, מה לא לשנות
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">🔁</div>
+                                <strong>תהליכים</strong><br>
+                                מה לעשות בכל פעם שמנתחים באגים / כותבים PRD
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.15em;">
+                        <div class="success-box">
+                            <p style="font-size: 0.75em; margin: 0;">
+                                ✅ Claude קורא את CLAUDE.md אוטומטית בכל session<br>
+                                💡 זה <strong>לא</strong> מקום לאחסן מידע — לשם יש ל-Claude <strong>memory</strong> משלו
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="fragment" style="margin-top: 0.5em;">
-                    <p class="hero-message" style="font-size: 0.95em;">ה-CLAUDE.md שהורדתם כבר כולל את פרטי הפרויקט שלכם</p>
-                </div>
+
                 <aside class="notes">
-                    "חשבו על זה כמו onboarding doc. כשפותחים Claude Code בפרויקט — הוא קורא את זה אוטומטית."
-                    "בלי זה, כל session מתחיל מאפס. עם זה — Claude כבר מכיר אתכם."
-                    כדאי לתת להם דקה לקרוא את ה-CLAUDE.md שהורידו.
+                    "Boris Cherny, היוצר של Claude Code, מתאר את זה כהוראות שחוזרות על עצמן."
+                    "לא onboarding doc — כללי עבודה. מה Claude *תמיד* צריך לעשות בפרויקט הזה."
+                    "ה-CLAUDE.md שהורדתם כבר מוגדר עם TaskFlow — תוכלו לשנות לפרויקט האמיתי שלכם."
+                    "Memory = משהו נפרד שClaude כותב לעצמו — ניגע בזה בסלייד הבא."
                 </aside>
             </section>
 
-            <!-- Slide 7: File Structure -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 10: File Structure
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>📁 מבנה הקבצים של Claude Code</h2>
-                <div style="display:flex; justify-content:space-around; gap:1em; font-size:0.75em;">
-                    <div class="visual-card" style="flex:1; text-align:right;">
-                        <p><strong>~/.claude/</strong></p>
-                        <p style="color:#aaa; font-size:0.85em;">רק שלך — כל הפרויקטים</p>
-                        <hr style="border-color:#42affa33;">
-                        <p>📄 CLAUDE.md</p>
+                <h2><span class="explain-badge">📖 הסבר</span> מבנה הקבצים 📁</h2>
+
+                <div style="display: flex; justify-content: space-around; gap: 0.6em; max-width: 900px; margin: 0.2em auto; font-size: 0.72em;">
+
+                    <div class="visual-card" style="flex: 1; text-align: right;">
+                        <p style="font-weight: bold; color: #42affa; margin-bottom: 0.1em;">~/.claude/ &nbsp;|&nbsp; C:\Users\[שם]\.claude\</p>
+                        <p style="color: #aaa; font-size: 0.9em; margin-bottom: 0.15em;">רק שלך — חוצה פרויקטים</p>
+                        <hr style="border-color: rgba(66,175,250,0.25); margin: 0.15em 0;">
+                        <p>📄 CLAUDE.md <span style="color:#aaa; font-size:0.85em;">(הוראות ברמת משתמש)</span></p>
                         <p>🤖 agents/</p>
                         <p>⚡ skills/</p>
-                        <p>🧠 projects/.../memory/</p>
+                        <p>🧠 projects/[project]/memory/ <span style="color:#aaa; font-size:0.85em;">(Claude כותב לעצמו)</span></p>
                     </div>
-                    <div style="display:flex; align-items:center; font-size:1.5em;">↔️</div>
-                    <div class="visual-card" style="flex:1; text-align:right;">
-                        <p><strong>.claude/</strong></p>
-                        <p style="color:#aaa; font-size:0.85em;">משותף עם הצוות — פרויקט אחד</p>
-                        <hr style="border-color:#42affa33;">
-                        <p>📄 CLAUDE.md</p>
+
+                    <div style="display: flex; align-items: center; font-size: 1.3em; color: #555;">↔</div>
+
+                    <div class="visual-card" style="flex: 1; text-align: right;">
+                        <p style="font-weight: bold; color: #42affa; margin-bottom: 0.1em;">[project-folder]/.claude/</p>
+                        <p style="color: #aaa; font-size: 0.9em; margin-bottom: 0.15em;">של הפרויקט — שיתוף עם צוות / GitHub</p>
+                        <hr style="border-color: rgba(66,175,250,0.25); margin: 0.15em 0;">
+                        <p>📄 CLAUDE.md <span style="color:#aaa; font-size:0.85em;">(הוראות לפרויקט)</span></p>
                         <p>🤖 agents/</p>
                         <p>⚡ skills/</p>
                         <p>⚙️ settings.json</p>
                     </div>
+
                 </div>
-                <div class="fragment" style="margin-top: 0.5em;">
-                    <p style="font-size:0.85em;">💡 <strong>CLAUDE.md</strong> = אתם כותבים ל-Claude &nbsp;|&nbsp; <strong>Memory</strong> = Claude כותב לעצמו</p>
+
+                <div class="fragment" style="margin-top: 0.3em;">
+                    <div class="success-box" style="max-width: 90%; margin: 0 auto;">
+                        <p style="font-size: 0.75em; margin: 0;">
+                            💡 <strong>CLAUDE.md</strong> = אתם כותבים הוראות ל-Claude &nbsp;|&nbsp;
+                            <strong>Memory</strong> = Claude כותב סיכומים לעצמו בין sessions
+                        </p>
+                    </div>
                 </div>
+
                 <aside class="notes">
-                    "שני מקומות לשמור דברים. ~/ זה האישי — לכל הפרויקטים שלכם.
-                    .claude זה של הפרויקט — יכול להיות ב-GitHub ולשתף עם הצוות."
-                    "הToolkit שהורדתם כבר כולל .claude/ מוכן."
+                    שני מקומות: ~/.claude (אישי, כל הפרויקטים) ו-.claude בתיקיית הפרויקט (ניתן לשיתוף).
+                    Windows: הסלאש הפוך — C:\Users\[username]\.claude\
+                    Memory: ~/.claude/projects/[encoded-path]/memory/ — נוצר אוטומטית. Claude שומר סיכומי שיחות.
+                    "הToolkit שהורדתם כבר כולל .claude/ מוכן עם agents ו-skills."
                 </aside>
             </section>
 
-            <!-- Slide 8: Agents vs Skills -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 11: Agents vs Skills
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>🤖 Agents מול Skills</h2>
-                <div class="comparison-table">
+                <h2><span class="explain-badge">📖 הסבר</span> Agents מול Skills 🤖⚡</h2>
+
+                <div class="comparison-table fragment">
                     <table>
                         <thead>
                             <tr>
@@ -544,9 +740,9 @@
                             <tr>
                                 <td><strong>מי מפעיל</strong></td>
                                 <td>Claude מחליט מתי לקרוא</td>
-                                <td>אתם — /skill-name</td>
+                                <td>אתם — <code>/skill-name</code></td>
                             </tr>
-                            <tr style="background: rgba(255,255,255,0.05);">
+                            <tr style="background: rgba(255,255,255,0.04);">
                                 <td><strong>הקשר</strong></td>
                                 <td>מבודד — session נפרד</td>
                                 <td>ממשיך את השיחה</td>
@@ -556,179 +752,207 @@
                                 <td>ניתוח פתוח, עבודה אוטונומית</td>
                                 <td>תוצר ידוע מראש, תבנית קבועה</td>
                             </tr>
-                            <tr style="background: rgba(255,255,255,0.05);">
+                            <tr style="background: rgba(255,255,255,0.04);">
                                 <td><strong>דוגמה</strong></td>
                                 <td>"נתח 50 באגים ותעדף"</td>
-                                <td>/write-stakeholder-update</td>
+                                <td><code>/write-stakeholder-update</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="fragment visual-card" style="margin-top: 0.4em;">
-                    <p style="font-size: 0.9em;">💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק</em></p>
+
+                <div class="fragment visual-card" style="margin-top: 0.35em;">
+                    <p style="font-size: 0.85em; margin: 0;">💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק את הפלט הסופי</em></p>
                 </div>
+
                 <aside class="notes">
-                    "Agents — Claude מחליט לבד מתי להשתמש בהם. הם רצים בבידוד, כמו עובד שמקבל משימה וחוזר עם תוצאה."
-                    "Skills — אתם מפעילים עם /שם. הם ממשיכים את השיחה הנוכחית."
-                    "היום נשתמש בשניהם: Agent לניתוח באגים, Skill לעדכון לבעלי עניין."
+                    "Agents: Claude מקבל משימה, יוצא לשיחה נפרדת, חוזר עם תוצאה."
+                    "Skills: /skill-name — ממשיך בשיחה הנוכחית, עם הקשר מלא."
+                    "היום נשתמש בAgent לניתוח באגים ובSkill לעדכון stakeholders."
                 </aside>
             </section>
 
-            <!-- Slide 9: Agents List -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 12: Agents + Skills List
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>🤖 הסוכנים שלכם היום</h2>
-                <div class="tip-grid">
+                <h2>🤖 הסוכנים והסקילים שלכם היום</h2>
+
+                <div class="tip-grid" style="max-width: 880px; margin: 0.2em auto;">
                     <div class="tip-card fragment">
                         <div class="tip-icon">🐛</div>
-                        <div class="tip-title">bug-priority-analyzer</div>
-                        <p>מנתח באגים ומעדף לפי חומרה והשפעה על משתמשים</p>
+                        <strong>bug-priority-analyzer</strong> <span style="color:#aaa;">(agent)</span><br>
+                        מנתח באגים ומעדף לפי חומרה והשפעה
                     </div>
                     <div class="tip-card fragment">
                         <div class="tip-icon">💬</div>
-                        <div class="tip-title">user-feedback-analyzer</div>
-                        <p>מנתח פידבק ומוצא דפוסים וחיבורים לבאגים</p>
+                        <strong>user-feedback-analyzer</strong> <span style="color:#aaa;">(agent)</span><br>
+                        מנתח פידבק ומחבר לבאגים קיימים
                     </div>
                     <div class="tip-card fragment">
                         <div class="tip-icon">🗓️</div>
-                        <div class="tip-title">sprint-backlog-prioritizer</div>
-                        <p>ממליץ מה להכניס לספרינט הבא לפי ROI</p>
+                        <strong>sprint-backlog-prioritizer</strong> <span style="color:#aaa;">(agent)</span><br>
+                        ממליץ מה להכניס לספרינט הבא
                     </div>
                     <div class="tip-card fragment">
                         <div class="tip-icon">📝</div>
-                        <div class="tip-title">meeting-summary</div>
-                        <p>הופך נוטס לסיכום מקצועי עם action items</p>
+                        <strong>meeting-summary</strong> <span style="color:#aaa;">(agent)</span><br>
+                        הופך נוטס לסיכום + action items
+                    </div>
+                    <div class="tip-card fragment">
+                        <div class="tip-icon">📤</div>
+                        <strong>/write-stakeholder-update</strong> <span style="color:#aaa;">(skill)</span><br>
+                        עדכון מובנה לבעלי עניין בפורמט Slack/Email
+                    </div>
+                    <div class="tip-card fragment">
+                        <div class="tip-icon">📋</div>
+                        <strong>/prioritize &nbsp;/create-user-stories</strong> <span style="color:#aaa;">(skills)</span><br>
+                        תעדוף עם RICE + כתיבת user stories
                     </div>
                 </div>
-                <div class="fragment" style="margin-top: 0.5em;">
-                    <p style="font-size: 0.85em;">📁 נמצאים ב: <code>.claude/agents/</code> &nbsp;|&nbsp; ⚡ Skills ב: <code>.claude/skills/</code></p>
-                </div>
+
                 <aside class="notes">
-                    "4 agents כבר מוכנים בתיקיית ה-.claude שהורדתם."
-                    "עברו עליהם בקצרה — לא צריך לזכור הכל. הם שם כשתצטרכו."
-                    "Skills: write-stakeholder-update, prioritize, create-user-stories."
-                    "תיכף נשתמש בשניים ראשונים ב-hands-on."
+                    "כל אלה כבר מוכנים בתיקיית ה-.claude שהורדתם."
+                    "תוכלו לראות אותם בשורת הפקודה: Claude Code: ask Claude 'מה הagents שיש לי?'"
+                    "אחרי הסדנה — תוכלו לשנות אותם ולהתאים לפרויקטים האמיתיים שלכם."
                 </aside>
             </section>
 
-            <!-- Slide 10: Monday Morning Scenario -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 13: Monday Morning Scenario
+            ════════════════════════════════════════════════ -->
             <section>
-                <h2>⏰ תרחיש יום שני בבוקר</h2>
-                <div class="visual-card">
-                    <p style="font-size: 0.95em;">08:30 — פלנינג ספרינט בעוד שעה וחצי</p>
-                    <p style="font-size: 0.95em;">50 באגים פתוחים ב-Jira</p>
-                    <p style="font-size: 0.95em;">30 פידבקים חדשים ממשתמשים</p>
-                    <p style="font-size: 0.95em;">ה-VP שואל: <em>"מה עדיפויות השבוע?"</em></p>
+                <h2><span class="hands-on-badge">✋ ביחד</span> יום שני בבוקר ⏰</h2>
+
+                <div class="visual-card fragment" style="max-width: 80%; margin: 0.2em auto;">
+                    <p style="font-size: 0.9em; margin-bottom: 0.1em;">08:30 — פלנינג ספרינט בעוד שעה וחצי</p>
+                    <p style="font-size: 0.85em; color: #ccc; margin: 0.05em 0;">50 באגים פתוחים ב-Jira</p>
+                    <p style="font-size: 0.85em; color: #ccc; margin: 0.05em 0;">30 פידבקים חדשים ממשתמשים</p>
                 </div>
-                <div class="fragment" style="margin-top: 0.5em;">
-                    <p style="font-size: 1em; font-weight: bold;">🎯 המשימה שלכם:</p>
-                    <div class="comparison" style="max-width: 800px; margin: 0.3em auto;">
-                        <div class="comparison-box old-way">
-                            <div class="comparison-title">❌ בדרך כלל</div>
-                            <div class="comparison-time">2 שעות</div>
-                            <p style="font-size: 0.75em;">Excel, Jira, Slack, ניחושים</p>
-                        </div>
-                        <div class="comparison-box new-way">
-                            <div class="comparison-title">✅ עם Claude Code</div>
-                            <div class="comparison-time">3 דקות</div>
-                            <p style="font-size: 0.75em;">דוח מנומק + עדכון ל-VP מוכן</p>
-                        </div>
+
+                <div class="fragment comparison-pair" style="margin-top: 0.3em;">
+                    <div class="before-box">
+                        <div style="font-weight: bold; margin-bottom: 0.15em; font-size: 0.85em;">❌ בדרך כלל</div>
+                        <div class="box-time">2 שעות</div>
+                        <p style="font-size: 0.7em;">Excel, Jira, Slack, ניחושים</p>
+                    </div>
+                    <div class="after-box">
+                        <div style="font-weight: bold; margin-bottom: 0.15em; font-size: 0.85em;">✅ עם Claude Code</div>
+                        <div class="box-time" style="color: #51cf66;">3 דקות</div>
+                        <p style="font-size: 0.7em;">דוח מנומק + עדכון מוכן</p>
                     </div>
                 </div>
-                <div class="fragment" style="margin-top: 0.4em;">
-                    <p class="big-icon">בואו נעשה את זה 💪</p>
+
+                <div class="exercise-box fragment" style="margin-top: 0.2em;">
+                    <p class="exercise-title">⏱️ 25 דקות — בואו נעשה את זה עכשיו 💪</p>
+                    <p style="font-size: 0.7em;">
+                        שלב 1: "תנתח את example-files/bug-reports.txt ותיצור דוח עדיפויות"<br>
+                        שלב 2: <code>/write-stakeholder-update</code>
+                    </p>
                 </div>
+
                 <aside class="notes">
-                    זה ה-pitch המרכזי. תנו לתרחיש לשקוע.
-                    "זה לא תיאורטי. זה בדיוק מה שאנחנו עושים עכשיו."
-                    "50 באגים אמיתיים, 30 פידבקים אמיתיים — הם בתיקיית example-files שהורדתם."
-                    fragment: הצגת הניגוד — 2 שעות מול 3 דקות.
-                    "כל שני בבוקר. כל שבוע."
+                    "זה לא תיאורטי. 50 באגים אמיתיים, 30 פידבקים — בתיקייה שהורדתם."
+                    שלב 1: תנו להם להקליד את הפרומפט בעצמם.
+                    שלב 2: /write-stakeholder-update — הSkill ישאל 4 שאלות: קהל, נושא, פורמט, בסיס.
+                    "אם נשאר זמן: נוסיף ניתוח פידבק משתמשים ונראה אם יש דפוסים שחוזרים."
+                    רגע ה-wow: "זה מה שהייתם עושים שעתיים ביום שני בבוקר. כל שבוע."
                 </aside>
             </section>
 
-            <!-- Slide 11: Wrap Up -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 14: Wrap Up
+            ════════════════════════════════════════════════ -->
             <section>
                 <h2>🎉 מה עשיתם היום</h2>
-                <div class="results-grid">
+
+                <div class="results-grid" style="max-width: 900px; margin: 0.2em auto;">
                     <div class="result-card fragment">
                         <div class="result-icon">⚙️</div>
                         <div class="result-title">התקנה</div>
-                        <p style="font-size: 0.75em;">Claude Code מותקן ועובד</p>
+                        <p style="font-size: 0.72em;">Claude Code מותקן ועובד</p>
                     </div>
                     <div class="result-card fragment">
                         <div class="result-icon">📥</div>
                         <div class="result-title">Toolkit</div>
-                        <p style="font-size: 0.75em;">הורדתם מ-GitHub עם Claude</p>
+                        <p style="font-size: 0.72em;">הורדתם מ-GitHub בלי פקודת git</p>
                     </div>
                     <div class="result-card fragment">
-                        <div class="result-icon">📋</div>
+                        <div class="result-icon">📄</div>
                         <div class="result-title">CLAUDE.md</div>
-                        <p style="font-size: 0.75em;">Claude מכיר את הפרויקט שלכם</p>
+                        <p style="font-size: 0.72em;">הוראות קבועות לפרויקט</p>
                     </div>
                     <div class="result-card fragment">
                         <div class="result-icon">🤖</div>
-                        <div class="result-title">Agents</div>
-                        <p style="font-size: 0.75em;">4 agents מוכנים לשימוש</p>
+                        <div class="result-title">Agents + Skills</div>
+                        <p style="font-size: 0.72em;">מוכנים לשימוש + להתאמה</p>
                     </div>
                     <div class="result-card fragment">
                         <div class="result-icon">📊</div>
                         <div class="result-title">דוח עדיפויות</div>
-                        <p style="font-size: 0.75em;">50 באגים מנותחים ב-3 דקות</p>
+                        <p style="font-size: 0.72em;">50 באגים → top 10 ב-3 דקות</p>
                     </div>
                     <div class="result-card fragment">
                         <div class="result-icon">📤</div>
-                        <div class="result-title">עדכון ל-VP</div>
-                        <p style="font-size: 0.75em;">מוכן לשליחה עכשיו</p>
+                        <div class="result-title">עדכון Stakeholders</div>
+                        <p style="font-size: 0.72em;">מובנה, מקצועי, מוכן</p>
                     </div>
                 </div>
-                <div class="fragment" style="margin-top: 0.5em;">
-                    <p style="font-size: 0.9em;">🎯 <strong>מחר בבוקר:</strong> פתחו Claude Code עם הפרויקט האמיתי שלכם — שנו את CLAUDE.md → התחילו</p>
+
+                <div class="fragment" style="margin-top: 0.3em;">
+                    <div class="success-box" style="max-width: 90%; margin: 0 auto;">
+                        <p style="font-size: 0.78em; margin: 0;">
+                            🎯 <strong>מחר בבוקר:</strong> פתחו Claude Code עם הפרויקט האמיתי שלכם — שנו CLAUDE.md → התחילו<br>
+                            <span style="color: #aaa; font-size: 0.9em;">✨ בונוס אם נשאר זמן: נוסיף ניתוח פידבק ונראה חיבורים לבאגים</span>
+                        </p>
+                    </div>
                 </div>
+
                 <aside class="notes">
-                    "עברנו הרבה בזמן קצר. בואו נסכם מה קרה."
-                    עברו על 6 ה-result cards בקצב.
-                    Fragment האחרון: "מחר בבוקר — פתחו Claude Code עם הפרויקט האמיתי שלכם."
-                    "ה-Toolkit שמור אצלכם — אפשר לשנות ה-CLAUDE.md עם הפרויקט שלכם ולהתחיל."
+                    עברו על ה-6 results בקצב.
+                    "כל מה שעשיתם היום — אפשר לחזור ולעשות עם הפרויקט האמיתי שלכם."
+                    בונוס: אם נשאר 10 דקות — "תנתח גם את user-feedback.txt ותגיד לי אם יש נושאים שחוזרים על באגים שמצאנו."
                 </aside>
             </section>
 
-            <!-- Slide 12: Thank You -->
-            <section class="center" style="position: relative;">
+            <!-- ═══════════════════════════════════════════════
+                 Slide 15: Thank You
+            ════════════════════════════════════════════════ -->
+            <section class="center">
                 <h2>תודה! 🙏</h2>
                 <div style="margin: 0.8em 0;">
-                    <p style="font-size: 1.2em;"><strong>יונתן קרמר</strong></p>
-                    <p style="font-size: 0.9em; margin: 0.3em 0;">Product as a Service</p>
-                    <p style="margin: 0.7em 0;">
-                        <a href="https://www.linkedin.com/in/yonatank/"
-                            style="color: #42affa; font-size: 1em;">
+                    <p style="font-size: 1.15em;"><strong>יונתן קרמר</strong></p>
+                    <p style="font-size: 0.85em; margin: 0.2em 0;">Product &amp; Builder as a Service</p>
+                    <p style="margin: 0.6em 0;">
+                        <a href="https://www.linkedin.com/in/yonatank/" style="color: #42affa; font-size: 0.95em;">
                             LinkedIn: yonatank
                         </a>
                     </p>
                     <p style="margin: 0.3em 0;">
-                        <a href="https://github.com/yonyosk/claude-code-workshop"
-                            style="color: #42affa; font-size: 0.9em;">
+                        <a href="https://github.com/yonyosk/claude-code-workshop" style="color: #42affa; font-size: 0.85em;">
                             github.com/yonyosk/claude-code-workshop
                         </a>
                     </p>
                 </div>
-                <div style="margin-top: 1.2em; font-size: 1.3em;">
+                <div style="margin-top: 1em; font-size: 1.2em;">
                     <p><strong>שאלות? 🤔</strong></p>
                 </div>
                 <aside class="notes">
-                    סיום באנרגיה גבוהה!
-                    "תודה רבה שהקשבתם — ועוד יותר שהתנסיתם!"
-                    "הסלייד הבא — QR code לה-Toolkit. סרקו ותמצאו את כל מה שהשתמשנו בו היום."
-                    פתחו לשאלות. אם אין מיד — "בדרך כלל שואלים אותי: איך מתחילים עם הפרויקט האמיתי שלי?"
+                    "הסלייד הבא — QR code ל-Toolkit. השאירו אותו על המסך בזמן השאלות."
+                    "אני נשאר — בואו לדבר, לשאול, להתחבר."
+                    "תזכרו: לא להתפחד. פשוט לפתוח ולהתחיל."
                 </aside>
             </section>
 
-            <!-- Slide 13: QR Code -->
+            <!-- ═══════════════════════════════════════════════
+                 Slide 16: QR Code
+            ════════════════════════════════════════════════ -->
             <section class="center">
                 <img src="images/workshop-qr.jpg" alt="Scan Me — Claude Code Workshop"
-                    style="max-height: 480px; height: auto; width: auto; border-radius: 12px;">
+                    style="max-height: 470px; height: auto; width: auto; border-radius: 12px;">
                 <aside class="notes">
-                    השאירו את הסלייד הזה על המסך בזמן השאלות.
-                    "סרקו את ה-QR לקבל את כל ה-Toolkit."
+                    השאירו על המסך בזמן השאלות.
+                    "סרקו לקבל את כל הToolkit."
                 </aside>
             </section>
 
@@ -751,18 +975,12 @@
             margin: 0.02,
             minScale: 0.2,
             maxScale: 1.5,
-            keyboard: {
-                37: 'prev',
-                39: 'next',
-                38: 'prev',
-                40: 'next'
-            },
+            keyboard: { 37: 'prev', 39: 'next', 38: 'prev', 40: 'next' },
             navigationMode: 'linear',
             controlsLayout: 'bottom-right',
             controlsBackArrows: 'faded'
         });
 
-        // Click to advance (skip links and buttons)
         document.querySelector('.reveal').addEventListener('click', function (event) {
             if (event.target.tagName !== 'A' &&
                 event.target.tagName !== 'BUTTON' &&
