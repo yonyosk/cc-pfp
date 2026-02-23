@@ -323,185 +323,414 @@
     <div class="reveal">
         <div class="slides">
 
-            <!-- Slide 1 -->
-            <section>
-  <h1>סדנת Claude Code</h1>
-  <h2>Product for Product</h2>
-  <br>
-  <p>בעוד 90 דקות יהיה לכם:</p>
-  <ul>
-    <li>✅ Claude Code מותקן ועובד</li>
-    <li>✅ Toolkit מקצועי מוכן לשימוש</li>
-    <li>✅ דוח עדיפויות באגים מוכן</li>
-    <li>✅ עדכון מוכן לשליחה ל-VP</li>
-  </ul>
-  <br>
-  <p><em>בואו נתחיל 🚀</em></p>
-</section>
+            <!-- Slide 1: Opening -->
+            <section class="center">
+                <h1>סדנת Claude Code</h1>
+                <div class="fragment">
+                    <span class="big-icon">🚀</span>
+                    <h3 style="margin-top: 0.3em;">Product for Product</h3>
+                </div>
+                <div class="fragment" style="margin-top: 0.5em;">
+                    <p style="font-size: 0.9em;">בעוד 90 דקות יהיה לכם:</p>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.3em; max-width: 700px; margin: 0.3em auto; font-size: 0.85em;">
+                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Claude Code מותקן ועובד</div>
+                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Toolkit מקצועי מ-GitHub</div>
+                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ דוח עדיפויות באגים</div>
+                        <div style="background: rgba(81,207,102,0.1); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ עדכון מוכן לשליחה ל-VP</div>
+                    </div>
+                </div>
+                <p class="fragment" style="margin-top: 0.5em; font-size: 0.95em;">יונתן קרמר | Product as a Service</p>
+                <aside class="notes">
+                    פתיחה דרמטית — קראו את ה-4 הישגים בקול.
+                    "תוך 90 דקות תצאו מכאן עם כלי עבודה שישנה את שני שלכם בבוקר."
+                    המתינו 2-3 שניות אחרי כל fragment.
+                </aside>
+            </section>
 
-            <!-- Slide 2 -->
+            <!-- Slide 2: About Me -->
             <section>
-  <h2>⚙️ התקנה</h2>
-  <pre><code>npm install -g @anthropic-ai/claude-code</code></pre>
-  <pre><code>claude --version</code></pre>
-  <pre><code>claude</code></pre>
-  <br>
-  <p>בדקו: כתבו <code>שלום, מה שלומך?</code></p>
-  <p>Claude עונה בעברית? ✅ מוכנים!</p>
-</section>
+                <h2>קצת עליי 👤</h2>
+                <div style="display: grid; grid-template-columns: 250px 1fr; gap: 1em; align-items: start; max-width: 850px; margin: 0 auto;">
+                    <div style="text-align: center;">
+                        <img src="images/lego-me.png" alt="יונתן קרמר"
+                            style="max-width: 250px; height: auto; border-radius: 12px;">
+                    </div>
+                    <div style="text-align: right;">
+                        <h3 style="text-align: right; margin: 0 0 0.1em 0; font-size: 1em;">יונתן קרמר</h3>
+                        <p style="font-size: 0.75em; margin: 0.05em 0;">
+                            <strong>Product as a Service</strong>
+                        </p>
+                        <p style="font-size: 0.65em; margin: 0.05em 0; color: #ccc;">
+                            10+ שנות ניסיון, בעיקר בעולמות B2B
+                        </p>
 
-            <!-- Slide 3 -->
-            <section>
-  <h2>📚 מה זה Git ו-GitHub?</h2>
-  <div class="visual-card">
-    <p><strong>Git</strong> = מערכת גרסאות מקומית</p>
-    <p>כמו "היסטוריית שמירות" לכל קובץ</p>
-  </div>
-  <br>
-  <div class="visual-card">
-    <p><strong>GitHub</strong> = המדף המשותף בענן</p>
-    <p>כולם מורידים מאותו מקום, תמיד עדכני</p>
-  </div>
-  <br>
-  <p>🎯 היום: Claude Code יוריד לכם את ה-Toolkit ישירות מ-GitHub</p>
-</section>
+                        <div class="fragment"
+                            style="margin-top: 0.3em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
+                            <p style="font-size: 0.65em; margin: 0.1em 0; line-height: 1.3;">
+                                <strong>כיום:</strong><br>
+                                עבודות מוצר לעסקים קטנים, בניית אוטומציות ואינטגרציות עם AI
+                            </p>
+                        </div>
 
-            <!-- Slide 4 -->
-            <section>
-  <h2>📥 מורידים את ה-Toolkit</h2>
-  <p>כתבו ב-Claude Code:</p>
-  <pre><code>תריץ עבורי:
-git clone https://github.com/yonyosk/claude-code-workshop workshop
-cd workshop</code></pre>
-  <br>
-  <div class="visual-card">
-    <p class="big-icon">💡</p>
-    <p><em>"שימו לב — לא הקלדתי פקודת git אחת.</em></p>
-    <p><em>Claude Code הריץ אותה בשבילי."</em></p>
-  </div>
-</section>
+                        <div class="fragment"
+                            style="margin-top: 0.2em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
+                            <p style="font-size: 0.6em; margin: 0.05em 0; line-height: 1.3; color: #bbb;">
+                                <strong>תעשיות קודמות:</strong><br>
+                                • סינון והגנה באינטרנט<br>
+                                • CRM והנהלת חשבונות<br>
+                                • ניהול מסלולים לצי משאיות
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    "קצת עליי כדי שתדעו מי מדבר. 10 שנות ניסיון בניהול מוצר, בעיקר B2B.
+                    היום אני עובד כיועץ עצמאי — עוזר לחברות עם ניהול מוצר ואוטומציה באמצעות AI."
+                </aside>
+            </section>
 
-            <!-- Slide 5 -->
+            <!-- Slide 3: Installation -->
             <section>
-  <h2>📋 מה זה CLAUDE.md?</h2>
-  <div class="visual-card">
-    <p>🧑‍💼 קיבלתם עובד חדש לצוות</p>
-    <p>אתם נותנים לו מסמך onboarding:</p>
-    <p>מי אנחנו, מה אנחנו בונים, מי הלקוחות</p>
-  </div>
-  <br>
-  <div class="visual-card">
-    <p>📄 <strong>CLAUDE.md = מסמך ה-onboarding של Claude</strong></p>
-    <p>Claude קורא אותו אוטומטית בכל session</p>
-    <p>יודע הכל — <strong>ללא הסבר חוזר</strong></p>
-  </div>
-</section>
+                <h2>⚙️ התקנה — 3 שלבים</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-day">שלב 1 — התקנה</div>
+                        <span class="medium-icon">📦</span>
+                        <pre style="font-size: 0.65em; text-align: left; background: rgba(0,0,0,0.3); padding: 0.4em; border-radius: 4px; margin: 0.3em 0; direction: ltr;"><code>npm install -g @anthropic-ai/claude-code</code></pre>
+                        <p style="font-size: 0.7em; color: #ccc;">דרוש: Node.js 18+</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-day">שלב 2 — הפעלה</div>
+                        <span class="medium-icon">🔐</span>
+                        <pre style="font-size: 0.65em; text-align: left; background: rgba(0,0,0,0.3); padding: 0.4em; border-radius: 4px; margin: 0.3em 0; direction: ltr;"><code>claude</code></pre>
+                        <p style="font-size: 0.7em; color: #ccc;">כניסה עם חשבון Claude Pro</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-day">שלב 3 — בדיקה</div>
+                        <span class="medium-icon">✅</span>
+                        <div style="font-size: 0.75em; margin: 0.3em 0; background: rgba(0,0,0,0.3); padding: 0.4em; border-radius: 4px;">
+                            שלום, מה שלומך?
+                        </div>
+                        <p style="font-size: 0.7em; color: #51cf66;">Claude עונה בעברית? מוכנים! 🎉</p>
+                    </div>
+                </div>
+                <div class="fragment visual-card" style="margin-top: 0.4em;">
+                    <p style="font-size: 0.85em;">💡 בפעם הראשונה — הדפדפן ייפתח לאישור הכניסה. זה תקין!</p>
+                </div>
+                <aside class="notes">
+                    עברו על 3 השלבים לאט.
+                    שלב 1: "זה npm — מנהל החבילות של Node.js. כמו App Store לקוד."
+                    שלב 2: "claude ללא פרמטרים — מפעיל את הממשק. בפעם הראשונה פותח דפדפן לכניסה."
+                    שלב 3: "תבדקו בעברית — אם עונה בעברית, הכל עובד."
+                    המתינו שכולם מצליחים לפני שממשיכים.
+                </aside>
+            </section>
 
-            <!-- Slide 6 -->
+            <!-- Slide 4: Git & GitHub -->
             <section>
-  <h2>📁 מבנה הקבצים של Claude Code</h2>
-  <div style="display:flex; justify-content:space-around; gap:1em; font-size:0.75em;">
-    <div class="visual-card" style="flex:1; text-align:right;">
-      <p><strong>~/.claude/</strong></p>
-      <p style="color:#aaa; font-size:0.85em;">רק שלך — כל הפרויקטים</p>
-      <hr style="border-color:#42affa33;">
-      <p>📄 CLAUDE.md</p>
-      <p>🤖 agents/</p>
-      <p>⚡ skills/</p>
-      <p>🧠 projects/.../memory/</p>
-    </div>
-    <div style="display:flex; align-items:center; font-size:1.5em;">↔️</div>
-    <div class="visual-card" style="flex:1; text-align:right;">
-      <p><strong>.claude/</strong></p>
-      <p style="color:#aaa; font-size:0.85em;">משותף עם הצוות — פרויקט אחד</p>
-      <hr style="border-color:#42affa33;">
-      <p>📄 CLAUDE.md</p>
-      <p>🤖 agents/</p>
-      <p>⚡ skills/</p>
-      <p>⚙️ settings.json</p>
-    </div>
-  </div>
-  <br>
-  <p style="font-size:0.8em;">💡 <strong>CLAUDE.md</strong> = אתם כותבים ל-Claude &nbsp;|&nbsp; <strong>Memory</strong> = Claude כותב לעצמו</p>
-</section>
+                <h2>📚 מה זה Git ו-GitHub?</h2>
+                <div class="visual-card fragment">
+                    <p style="font-size: 1em;"><strong>Git</strong> = מערכת גרסאות מקומית</p>
+                    <p style="font-size: 0.85em; color: #ccc;">כמו "היסטוריית שמירות" לכל קובץ</p>
+                    <p style="font-size: 0.75em; margin-top: 0.2em;">📖 Google Docs — "ראה גרסאות קודמות" — רק לקבצים</p>
+                </div>
+                <div class="visual-card fragment">
+                    <p style="font-size: 1em;"><strong>GitHub</strong> = המדף המשותף בענן</p>
+                    <p style="font-size: 0.85em; color: #ccc;">כולם מורידים מאותו מקום, תמיד עדכני</p>
+                    <p style="font-size: 0.75em; margin-top: 0.2em;">📁 כמו Google Drive — רק לקוד</p>
+                </div>
+                <div class="fragment" style="margin-top: 0.5em;">
+                    <p class="hero-message" style="font-size: 1em;">🎯 היום: Claude Code יוריד לכם את ה-Toolkit ישירות מ-GitHub</p>
+                </div>
+                <aside class="notes">
+                    "לא צריכים לזכור פקודות git. Claude Code ינהל אותן בשבילכם."
+                    "אבל חשוב להבין למה GitHub — כי זה מאיפה נוריד את הכלים שלכם."
+                </aside>
+            </section>
 
-            <!-- Slide 7 -->
+            <!-- Slide 5: Clone via Claude Code -->
             <section>
-  <h2>🤖 Agents מול Skills</h2>
-  <table style="font-size:0.75em; width:100%; border-collapse: collapse;">
-    <tr style="background: rgba(66,175,250,0.2);">
-      <th style="padding: 8px; border: 1px solid #42affa;"></th>
-      <th style="padding: 8px; border: 1px solid #42affa;">Agents 🤖</th>
-      <th style="padding: 8px; border: 1px solid #42affa;">Skills ⚡</th>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #555;"><strong>מי מפעיל</strong></td>
-      <td style="padding: 8px; border: 1px solid #555;">Claude מחליט מתי לקרוא</td>
-      <td style="padding: 8px; border: 1px solid #555;">אתם — /skill-name</td>
-    </tr>
-    <tr style="background: rgba(255,255,255,0.05);">
-      <td style="padding: 8px; border: 1px solid #555;"><strong>מתאים ל</strong></td>
-      <td style="padding: 8px; border: 1px solid #555;">ניתוח פתוח, עבודה אוטונומית</td>
-      <td style="padding: 8px; border: 1px solid #555;">תוצר ידוע מראש, תבנית קבועה</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #555;"><strong>דוגמה</strong></td>
-      <td style="padding: 8px; border: 1px solid #555;">"נתח 50 באגים ותעדף"</td>
-      <td style="padding: 8px; border: 1px solid #555;">/write-stakeholder-update</td>
-    </tr>
-  </table>
-  <br>
-  <p>💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק</em></p>
-</section>
+                <h2>📥 מורידים את ה-Toolkit</h2>
+                <p style="font-size: 0.9em; margin-bottom: 0.3em;">כתבו ב-Claude Code:</p>
+                <div class="demo-frame" style="text-align: left; direction: ltr; font-size: 0.85em; max-width: 750px; margin: 0 auto;">
+                    תריץ עבורי:<br>
+                    git clone https://github.com/yonyosk/claude-code-workshop workshop<br>
+                    cd workshop
+                </div>
+                <div class="fragment visual-card" style="margin-top: 0.6em;">
+                    <p class="big-icon">💡</p>
+                    <p><em>"שימו לב — לא הקלדתי פקודת git אחת.</em></p>
+                    <p><em>Claude Code הריץ אותה בשבילי."</em></p>
+                </div>
+                <aside class="notes">
+                    זה הרגע הראשון של "וואו".
+                    הדגישו: "אני נתתי הוראה בעברית. Claude Code תירגם אותה לפקודות git ורץ."
+                    "זו בדיוק הנקודה — אתם מדברים, הוא עושה."
+                </aside>
+            </section>
 
-            <!-- Slide 8 -->
+            <!-- Slide 6: CLAUDE.md -->
             <section>
-  <h2>🤖 הסוכנים שלכם היום</h2>
-  <ul>
-    <li><strong>bug-priority-analyzer</strong><br><small>מנתח באגים ומעדף לפי חומרה והשפעה</small></li>
-    <li><strong>user-feedback-analyzer</strong><br><small>מנתח פידבק משתמשים ומוצא דפוסים</small></li>
-    <li><strong>sprint-backlog-prioritizer</strong><br><small>ממליץ מה להכניס לספרינט הבא</small></li>
-    <li><strong>meeting-summary</strong><br><small>הופך נוטס לסיכום מקצועי עם action items</small></li>
-  </ul>
-  <br>
-  <p>📁 נמצאים ב: <code>.claude/agents/</code></p>
-  <p>⚡ Skills ב: <code>.claude/skills/</code></p>
-</section>
+                <h2>📋 מה זה CLAUDE.md?</h2>
+                <div class="visual-card fragment">
+                    <p style="font-size: 1em;">🧑‍💼 קיבלתם עובד חדש לצוות</p>
+                    <p style="font-size: 0.85em; color: #ccc;">אתם נותנים לו מסמך onboarding:<br>
+                    מי אנחנו, מה אנחנו בונים, מי הלקוחות</p>
+                </div>
+                <div class="fragment" style="margin-top: 0.4em;">
+                    <div style="background: rgba(66,175,250,0.2); border: 2px solid #42affa; border-radius: 8px; padding: 0.5em; max-width: 80%; margin: 0 auto;">
+                        <p style="font-size: 0.95em;">📄 <strong>CLAUDE.md = מסמך ה-onboarding של Claude</strong></p>
+                        <p style="font-size: 0.8em; color: #ccc; margin-top: 0.2em;">Claude קורא אותו אוטומטית בכל session</p>
+                        <p style="font-size: 0.8em; color: #51cf66;">יודע הכל — <strong>ללא הסבר חוזר</strong></p>
+                    </div>
+                </div>
+                <div class="fragment" style="margin-top: 0.5em;">
+                    <p class="hero-message" style="font-size: 0.95em;">ה-CLAUDE.md שהורדתם כבר כולל את פרטי הפרויקט שלכם</p>
+                </div>
+                <aside class="notes">
+                    "חשבו על זה כמו onboarding doc. כשפותחים Claude Code בפרויקט — הוא קורא את זה אוטומטית."
+                    "בלי זה, כל session מתחיל מאפס. עם זה — Claude כבר מכיר אתכם."
+                    כדאי לתת להם דקה לקרוא את ה-CLAUDE.md שהורידו.
+                </aside>
+            </section>
 
-            <!-- Slide 9 -->
+            <!-- Slide 7: File Structure -->
             <section>
-  <h2>⏰ תרחיש יום שני בבוקר</h2>
-  <div class="visual-card">
-    <p>08:30 — פלנינג ספרינט בעוד שעה וחצי</p>
-    <p>50 באגים פתוחים ב-Jira</p>
-    <p>30 פידבקים חדשים ממשתמשים</p>
-    <p>ה-VP שואל: <em>"מה עדיפויות השבוע?"</em></p>
-  </div>
-  <br>
-  <p>🎯 <strong>המשימה שלכם:</strong></p>
-  <p>דוח עדיפויות + עדכון ל-VP</p>
-  <p>בעוד 25 דקות</p>
-  <br>
-  <p class="big-icon">בואו נעשה את זה 💪</p>
-</section>
+                <h2>📁 מבנה הקבצים של Claude Code</h2>
+                <div style="display:flex; justify-content:space-around; gap:1em; font-size:0.75em;">
+                    <div class="visual-card" style="flex:1; text-align:right;">
+                        <p><strong>~/.claude/</strong></p>
+                        <p style="color:#aaa; font-size:0.85em;">רק שלך — כל הפרויקטים</p>
+                        <hr style="border-color:#42affa33;">
+                        <p>📄 CLAUDE.md</p>
+                        <p>🤖 agents/</p>
+                        <p>⚡ skills/</p>
+                        <p>🧠 projects/.../memory/</p>
+                    </div>
+                    <div style="display:flex; align-items:center; font-size:1.5em;">↔️</div>
+                    <div class="visual-card" style="flex:1; text-align:right;">
+                        <p><strong>.claude/</strong></p>
+                        <p style="color:#aaa; font-size:0.85em;">משותף עם הצוות — פרויקט אחד</p>
+                        <hr style="border-color:#42affa33;">
+                        <p>📄 CLAUDE.md</p>
+                        <p>🤖 agents/</p>
+                        <p>⚡ skills/</p>
+                        <p>⚙️ settings.json</p>
+                    </div>
+                </div>
+                <div class="fragment" style="margin-top: 0.5em;">
+                    <p style="font-size:0.85em;">💡 <strong>CLAUDE.md</strong> = אתם כותבים ל-Claude &nbsp;|&nbsp; <strong>Memory</strong> = Claude כותב לעצמו</p>
+                </div>
+                <aside class="notes">
+                    "שני מקומות לשמור דברים. ~/ זה האישי — לכל הפרויקטים שלכם.
+                    .claude זה של הפרויקט — יכול להיות ב-GitHub ולשתף עם הצוות."
+                    "הToolkit שהורדתם כבר כולל .claude/ מוכן."
+                </aside>
+            </section>
 
-            <!-- Slide 10 -->
+            <!-- Slide 8: Agents vs Skills -->
             <section>
-  <h2>🎉 מה עשיתם היום</h2>
-  <ul>
-    <li>✅ Claude Code מותקן</li>
-    <li>✅ הורדתם Toolkit מ-GitHub</li>
-    <li>✅ הבנתם CLAUDE.md, Agents ו-Skills</li>
-    <li>✅ דוח עדיפויות ב-3 דקות</li>
-    <li>✅ עדכון ל-VP מוכן לשליחה</li>
-  </ul>
-  <br>
-  <p>🎯 <strong>מחר בבוקר:</strong></p>
-  <p>פתחו Claude Code עם הפרויקט האמיתי שלכם</p>
-  <p>שנו את CLAUDE.md → והתחילו</p>
-  <br>
-  <p>🔗 ה-Toolkit: <code>https://github.com/yonyosk/claude-code-workshop</code></p>
-</section>
+                <h2>🤖 Agents מול Skills</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Agents 🤖</th>
+                                <th>Skills ⚡</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>מי מפעיל</strong></td>
+                                <td>Claude מחליט מתי לקרוא</td>
+                                <td>אתם — /skill-name</td>
+                            </tr>
+                            <tr style="background: rgba(255,255,255,0.05);">
+                                <td><strong>הקשר</strong></td>
+                                <td>מבודד — session נפרד</td>
+                                <td>ממשיך את השיחה</td>
+                            </tr>
+                            <tr>
+                                <td><strong>מתאים ל</strong></td>
+                                <td>ניתוח פתוח, עבודה אוטונומית</td>
+                                <td>תוצר ידוע מראש, תבנית קבועה</td>
+                            </tr>
+                            <tr style="background: rgba(255,255,255,0.05);">
+                                <td><strong>דוגמה</strong></td>
+                                <td>"נתח 50 באגים ותעדף"</td>
+                                <td>/write-stakeholder-update</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fragment visual-card" style="margin-top: 0.4em;">
+                    <p style="font-size: 0.9em;">💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק</em></p>
+                </div>
+                <aside class="notes">
+                    "Agents — Claude מחליט לבד מתי להשתמש בהם. הם רצים בבידוד, כמו עובד שמקבל משימה וחוזר עם תוצאה."
+                    "Skills — אתם מפעילים עם /שם. הם ממשיכים את השיחה הנוכחית."
+                    "היום נשתמש בשניהם: Agent לניתוח באגים, Skill לעדכון לבעלי עניין."
+                </aside>
+            </section>
+
+            <!-- Slide 9: Agents List -->
+            <section>
+                <h2>🤖 הסוכנים שלכם היום</h2>
+                <div class="tip-grid">
+                    <div class="tip-card fragment">
+                        <div class="tip-icon">🐛</div>
+                        <div class="tip-title">bug-priority-analyzer</div>
+                        <p>מנתח באגים ומעדף לפי חומרה והשפעה על משתמשים</p>
+                    </div>
+                    <div class="tip-card fragment">
+                        <div class="tip-icon">💬</div>
+                        <div class="tip-title">user-feedback-analyzer</div>
+                        <p>מנתח פידבק ומוצא דפוסים וחיבורים לבאגים</p>
+                    </div>
+                    <div class="tip-card fragment">
+                        <div class="tip-icon">🗓️</div>
+                        <div class="tip-title">sprint-backlog-prioritizer</div>
+                        <p>ממליץ מה להכניס לספרינט הבא לפי ROI</p>
+                    </div>
+                    <div class="tip-card fragment">
+                        <div class="tip-icon">📝</div>
+                        <div class="tip-title">meeting-summary</div>
+                        <p>הופך נוטס לסיכום מקצועי עם action items</p>
+                    </div>
+                </div>
+                <div class="fragment" style="margin-top: 0.5em;">
+                    <p style="font-size: 0.85em;">📁 נמצאים ב: <code>.claude/agents/</code> &nbsp;|&nbsp; ⚡ Skills ב: <code>.claude/skills/</code></p>
+                </div>
+                <aside class="notes">
+                    "4 agents כבר מוכנים בתיקיית ה-.claude שהורדתם."
+                    "עברו עליהם בקצרה — לא צריך לזכור הכל. הם שם כשתצטרכו."
+                    "Skills: write-stakeholder-update, prioritize, create-user-stories."
+                    "תיכף נשתמש בשניים ראשונים ב-hands-on."
+                </aside>
+            </section>
+
+            <!-- Slide 10: Monday Morning Scenario -->
+            <section>
+                <h2>⏰ תרחיש יום שני בבוקר</h2>
+                <div class="visual-card">
+                    <p style="font-size: 0.95em;">08:30 — פלנינג ספרינט בעוד שעה וחצי</p>
+                    <p style="font-size: 0.95em;">50 באגים פתוחים ב-Jira</p>
+                    <p style="font-size: 0.95em;">30 פידבקים חדשים ממשתמשים</p>
+                    <p style="font-size: 0.95em;">ה-VP שואל: <em>"מה עדיפויות השבוע?"</em></p>
+                </div>
+                <div class="fragment" style="margin-top: 0.5em;">
+                    <p style="font-size: 1em; font-weight: bold;">🎯 המשימה שלכם:</p>
+                    <div class="comparison" style="max-width: 800px; margin: 0.3em auto;">
+                        <div class="comparison-box old-way">
+                            <div class="comparison-title">❌ בדרך כלל</div>
+                            <div class="comparison-time">2 שעות</div>
+                            <p style="font-size: 0.75em;">Excel, Jira, Slack, ניחושים</p>
+                        </div>
+                        <div class="comparison-box new-way">
+                            <div class="comparison-title">✅ עם Claude Code</div>
+                            <div class="comparison-time">3 דקות</div>
+                            <p style="font-size: 0.75em;">דוח מנומק + עדכון ל-VP מוכן</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fragment" style="margin-top: 0.4em;">
+                    <p class="big-icon">בואו נעשה את זה 💪</p>
+                </div>
+                <aside class="notes">
+                    זה ה-pitch המרכזי. תנו לתרחיש לשקוע.
+                    "זה לא תיאורטי. זה בדיוק מה שאנחנו עושים עכשיו."
+                    "50 באגים אמיתיים, 30 פידבקים אמיתיים — הם בתיקיית example-files שהורדתם."
+                    fragment: הצגת הניגוד — 2 שעות מול 3 דקות.
+                    "כל שני בבוקר. כל שבוע."
+                </aside>
+            </section>
+
+            <!-- Slide 11: Wrap Up -->
+            <section>
+                <h2>🎉 מה עשיתם היום</h2>
+                <div class="results-grid">
+                    <div class="result-card fragment">
+                        <div class="result-icon">⚙️</div>
+                        <div class="result-title">התקנה</div>
+                        <p style="font-size: 0.75em;">Claude Code מותקן ועובד</p>
+                    </div>
+                    <div class="result-card fragment">
+                        <div class="result-icon">📥</div>
+                        <div class="result-title">Toolkit</div>
+                        <p style="font-size: 0.75em;">הורדתם מ-GitHub עם Claude</p>
+                    </div>
+                    <div class="result-card fragment">
+                        <div class="result-icon">📋</div>
+                        <div class="result-title">CLAUDE.md</div>
+                        <p style="font-size: 0.75em;">Claude מכיר את הפרויקט שלכם</p>
+                    </div>
+                    <div class="result-card fragment">
+                        <div class="result-icon">🤖</div>
+                        <div class="result-title">Agents</div>
+                        <p style="font-size: 0.75em;">4 agents מוכנים לשימוש</p>
+                    </div>
+                    <div class="result-card fragment">
+                        <div class="result-icon">📊</div>
+                        <div class="result-title">דוח עדיפויות</div>
+                        <p style="font-size: 0.75em;">50 באגים מנותחים ב-3 דקות</p>
+                    </div>
+                    <div class="result-card fragment">
+                        <div class="result-icon">📤</div>
+                        <div class="result-title">עדכון ל-VP</div>
+                        <p style="font-size: 0.75em;">מוכן לשליחה עכשיו</p>
+                    </div>
+                </div>
+                <div class="fragment" style="margin-top: 0.5em;">
+                    <p style="font-size: 0.9em;">🎯 <strong>מחר בבוקר:</strong> פתחו Claude Code עם הפרויקט האמיתי שלכם — שנו את CLAUDE.md → התחילו</p>
+                </div>
+                <aside class="notes">
+                    "עברנו הרבה בזמן קצר. בואו נסכם מה קרה."
+                    עברו על 6 ה-result cards בקצב.
+                    Fragment האחרון: "מחר בבוקר — פתחו Claude Code עם הפרויקט האמיתי שלכם."
+                    "ה-Toolkit שמור אצלכם — אפשר לשנות ה-CLAUDE.md עם הפרויקט שלכם ולהתחיל."
+                </aside>
+            </section>
+
+            <!-- Slide 12: Thank You -->
+            <section class="center" style="position: relative;">
+                <h2>תודה! 🙏</h2>
+                <div style="margin: 0.8em 0;">
+                    <p style="font-size: 1.2em;"><strong>יונתן קרמר</strong></p>
+                    <p style="font-size: 0.9em; margin: 0.3em 0;">Product as a Service</p>
+                    <p style="margin: 0.7em 0;">
+                        <a href="https://www.linkedin.com/in/yonatank/"
+                            style="color: #42affa; font-size: 1em;">
+                            LinkedIn: yonatank
+                        </a>
+                    </p>
+                    <p style="margin: 0.3em 0;">
+                        <a href="https://github.com/yonyosk/claude-code-workshop"
+                            style="color: #42affa; font-size: 0.9em;">
+                            github.com/yonyosk/claude-code-workshop
+                        </a>
+                    </p>
+                </div>
+                <div style="margin-top: 1.2em; font-size: 1.3em;">
+                    <p><strong>שאלות? 🤔</strong></p>
+                </div>
+                <aside class="notes">
+                    סיום באנרגיה גבוהה!
+                    "תודה רבה שהקשבתם — ועוד יותר שהתנסיתם!"
+                    "הסלייד הבא — QR code לה-Toolkit. סרקו ותמצאו את כל מה שהשתמשנו בו היום."
+                    פתחו לשאלות. אם אין מיד — "בדרך כלל שואלים אותי: איך מתחילים עם הפרויקט האמיתי שלי?"
+                </aside>
+            </section>
+
+            <!-- Slide 13: QR Code -->
+            <section class="center">
+                <img src="images/workshop-qr.jpg" alt="Scan Me — Claude Code Workshop"
+                    style="max-height: 480px; height: auto; width: auto; border-radius: 12px;">
+                <aside class="notes">
+                    השאירו את הסלייד הזה על המסך בזמן השאלות.
+                    "סרקו את ה-QR לקבל את כל ה-Toolkit."
+                </aside>
+            </section>
 
         </div>
     </div>
@@ -529,14 +758,12 @@ cd workshop</code></pre>
                 40: 'next'
             },
             navigationMode: 'linear',
-            // Enable mouse click to advance slides
             controlsLayout: 'bottom-right',
             controlsBackArrows: 'faded'
         });
 
-        // Add click listener to advance slides on mouse click
+        // Click to advance (skip links and buttons)
         document.querySelector('.reveal').addEventListener('click', function (event) {
-            // Don't advance if clicking on links or interactive elements
             if (event.target.tagName !== 'A' &&
                 event.target.tagName !== 'BUTTON' &&
                 !event.target.closest('a') &&
