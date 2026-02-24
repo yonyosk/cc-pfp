@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>סדנת Claude Code — Product for Product</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css" integrity="sha384-AJKv9Ui5SfA0VsFksFI9GuA1ztX9Ca3CLP6HGfX4YY/tYSVodC+PUszaQZFIlkuy" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" integrity="sha384-rH4u5W+BK28t3M3TabJv90WpfU+EcQLxwZ83OS9p3400xZdZPsZfl/mFFCNGD/2M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" integrity="sha384-/ZvODhFsGDTGwNNKm3urEF4uoXGBg4+MtyMIHL6Vt56FE20B5x9vIe6fTXzlOR3D" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css"
+        integrity="sha384-AJKv9Ui5SfA0VsFksFI9GuA1ztX9Ca3CLP6HGfX4YY/tYSVodC+PUszaQZFIlkuy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
+        integrity="sha384-rH4u5W+BK28t3M3TabJv90WpfU+EcQLxwZ83OS9p3400xZdZPsZfl/mFFCNGD/2M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css"
+        integrity="sha384-/ZvODhFsGDTGwNNKm3urEF4uoXGBg4+MtyMIHL6Vt56FE20B5x9vIe6fTXzlOR3D" crossorigin="anonymous">
     <style>
         .reveal {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,13 +47,21 @@
             text-align: center;
         }
 
-        .reveal .center { text-align: center; }
+        .reveal .center {
+            text-align: center;
+        }
 
-        .reveal ul { text-align: right; }
+        .reveal ul {
+            text-align: right;
+        }
 
-        .reveal li { margin: 0.15em 0; }
+        .reveal li {
+            margin: 0.15em 0;
+        }
 
-        .reveal p { margin: 0.15em 0; }
+        .reveal p {
+            margin: 0.15em 0;
+        }
 
         /* ── Badge labels ──────────────────────── */
         .hands-on-badge {
@@ -174,7 +185,10 @@
             line-height: 1.2;
         }
 
-        .tip-icon { font-size: 1em; margin-bottom: 0.05em; }
+        .tip-icon {
+            font-size: 1em;
+            margin-bottom: 0.05em;
+        }
 
         /* ── Comparison table ──────────────────── */
         .comparison-table {
@@ -252,7 +266,10 @@
             border: 2px solid #51cf66;
         }
 
-        .result-icon { font-size: 1.2em; margin-bottom: 0.1em; }
+        .result-icon {
+            font-size: 1.2em;
+            margin-bottom: 0.1em;
+        }
 
         .result-title {
             font-size: 0.75em;
@@ -272,10 +289,27 @@
         }
 
         /* ── Misc ──────────────────────────────── */
-        .big-icon { font-size: 1.5em; margin: 0.1em 0; }
-        .medium-icon { font-size: 1em; margin: 0.05em; }
-        .highlight { color: #42affa; font-weight: bold; }
-        .hero-message { font-size: 1.1em; font-weight: bold; line-height: 1.25; color: #42affa; }
+        .big-icon {
+            font-size: 1.5em;
+            margin: 0.1em 0;
+        }
+
+        .medium-icon {
+            font-size: 1em;
+            margin: 0.05em;
+        }
+
+        .highlight {
+            color: #42affa;
+            font-weight: bold;
+        }
+
+        .hero-message {
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: 1.25;
+            color: #42affa;
+        }
     </style>
 </head>
 
@@ -294,14 +328,24 @@
                 </div>
                 <div class="fragment" style="margin-top: 0.5em;">
                     <p style="font-size: 0.85em; margin-bottom: 0.3em;">בעוד 90 דקות יהיה לכם:</p>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.25em; max-width: 680px; margin: 0 auto; font-size: 0.8em;">
-                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Claude Code מותקן ועובד</div>
-                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ Toolkit מקצועי מ-GitHub</div>
-                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ 50 באגים → דוח עדיפויות ב-3 דקות</div>
-                        <div style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">✅ כלי שתשתמשו בו מחר בבוקר</div>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.25em; max-width: 680px; margin: 0 auto; font-size: 0.8em;">
+                        <div
+                            style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">
+                            ✅ Claude Code מותקן ועובד</div>
+                        <div
+                            style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">
+                            ✅ Toolkit מקצועי מ-GitHub</div>
+                        <div
+                            style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">
+                            ✅ 50 באגים → דוח עדיפויות ב-3 דקות</div>
+                        <div
+                            style="background: rgba(81,207,102,0.12); border: 1px solid #51cf66; border-radius: 6px; padding: 0.3em;">
+                            ✅ כלי שתשתמשו בו מחר בבוקר</div>
                     </div>
                 </div>
-                <p class="fragment" style="margin-top: 0.5em; font-size: 0.9em;">יונתן קרמר | Product &amp; Builder as a Service</p>
+                <p class="fragment" style="margin-top: 0.5em; font-size: 0.9em;">יונתן קרמר | Product &amp; Builder as a
+                    Service</p>
                 <aside class="notes">
                     פתיחה — קראו את ה-4 הישגים בקול ברור.
                     "לא מצגת. לא יאלה. היום אנחנו עושים."
@@ -314,24 +358,29 @@
             ════════════════════════════════════════════════ -->
             <section>
                 <h2>קצת עליי 👤</h2>
-                <div style="display: grid; grid-template-columns: 240px 1fr; gap: 1em; align-items: start; max-width: 850px; margin: 0 auto;">
+                <div
+                    style="display: grid; grid-template-columns: 240px 1fr; gap: 1em; align-items: start; max-width: 850px; margin: 0 auto;">
                     <div style="text-align: center;">
                         <img src="images/lego-me.png" alt="יונתן קרמר"
                             style="max-width: 230px; height: auto; border-radius: 12px;">
                     </div>
                     <div style="text-align: right;">
                         <h3 style="text-align: right; margin: 0 0 0.1em 0; font-size: 1em;">יונתן קרמר</h3>
-                        <p style="font-size: 0.75em; margin: 0.05em 0;"><strong>Product &amp; Builder as a Service</strong></p>
-                        <p style="font-size: 0.65em; margin: 0.05em 0; color: #ccc;">10+ שנות ניסיון, בעיקר בעולמות B2B</p>
+                        <p style="font-size: 0.75em; margin: 0.05em 0;"><strong>Product &amp; Builder as a
+                                Service</strong></p>
+                        <p style="font-size: 0.65em; margin: 0.05em 0; color: #ccc;">10+ שנות ניסיון, בעיקר בעולמות B2B
+                        </p>
 
-                        <div class="fragment" style="margin-top: 0.3em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
+                        <div class="fragment"
+                            style="margin-top: 0.3em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
                             <p style="font-size: 0.65em; margin: 0.1em 0; line-height: 1.3;">
                                 <strong>כיום:</strong><br>
                                 עבודות מוצר לעסקים קטנים, בניית אוטומציות ואינטגרציות עם AI
                             </p>
                         </div>
 
-                        <div class="fragment" style="margin-top: 0.2em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
+                        <div class="fragment"
+                            style="margin-top: 0.2em; padding: 0.25em 0.4em; background: rgba(255,255,255,0.05); border-radius: 6px;">
                             <p style="font-size: 0.6em; margin: 0.05em 0; line-height: 1.3; color: #bbb;">
                                 <strong>תעשיות קודמות:</strong><br>
                                 • סינון והגנה באינטרנט<br>
@@ -348,45 +397,75 @@
             </section>
 
             <!-- ═══════════════════════════════════════════════
-                 Slide 3: Installation
+                 Slide 3a: Installation — Mac / Linux / WSL
             ════════════════════════════════════════════════ -->
             <section>
-                <h2><span class="hands-on-badge">✋ ביחד</span> התקנה 💻</h2>
+                <h2><span class="hands-on-badge">✋ ביחד</span> התקנה — Mac / Linux / WSL 🍎🐧</h2>
 
-                <div class="fragment">
-                    <h3>macOS / Linux / WSL:</h3>
-                    <div class="code-box">curl -fsSL https://claude.ai/install.sh | bash</div>
-                </div>
+                <div style="max-width: 860px; margin: 0.2em auto;">
+                    <div class="fragment">
+                        <h3>הריצו בטרמינל:</h3>
+                        <div class="code-box">curl -fsSL https://claude.ai/install.sh | bash</div>
+                    </div>
 
-                <div class="fragment" style="margin-top: 0.1em;">
-                    <h3>Windows PowerShell:</h3>
-                    <div class="code-box">irm https://claude.ai/install.ps1 | iex</div>
-                </div>
+                    <div class="fragment" style="margin-top: 0.25em;">
+                        <div class="warning-box">
+                            <p style="font-size: 0.75em; line-height: 1.5; margin: 0;">
+                                ⚠️ <strong>Mac:</strong> לאחר ההתקנה הסקריפט ידפיס פקודה כמו:<br>
+                                <code style="font-size: 0.9em;">source ~/.zshrc</code><br>
+                                הריצו אותה — ואז <strong>סגרו ופתחו מחדש</strong> את הטרמינל
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="fragment" style="margin-top: 0.1em;">
-                    <h3>Windows CMD:</h3>
-                    <div class="code-box" style="font-size: 0.6em;">curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd</div>
-                </div>
-
-                <div class="fragment" style="margin-top: 0.15em;">
-                    <div class="warning-box">
-                        <p style="font-size: 0.7em; line-height: 1.35; margin: 0;">
-                            ⚠️ <strong>Windows</strong>: אחרי ההתקנה — סגרו ופתחו מחדש את הטרמינל<br>
-                            ⚠️ <strong>Mac</strong>: הסקריפט יציג פקודה נוספת — הריצו אותה, ואז סגרו ופתחו מחדש
-                        </p>
+                    <div class="exercise-box fragment" style="margin-top: 0.25em;">
+                        <p class="exercise-title">⏱️ אחרי ההתקנה: הריצו <code>claude --version</code> — רואים גרסה? 🎉</p>
                     </div>
                 </div>
 
-                <div class="exercise-box fragment" style="margin-top: 0.12em;">
-                    <p class="exercise-title">⏱️ עכשיו מתקינים — 5 דקות. תרימו יד אם תקועים!</p>
+                <aside class="notes">
+                    Mac: source ~/.zshrc — בלי זה claude לא נמצא בטרמינל.
+                    Linux/WSL: בדרך כלל עובד ישר, אותה פקודה.
+                    אל תמשיכו בלי שכולם מותקנים.
+                </aside>
+            </section>
+
+            <!-- ═══════════════════════════════════════════════
+                 Slide 3b: Installation — Windows
+            ════════════════════════════════════════════════ -->
+            <section>
+                <h2><span class="hands-on-badge">✋ ביחד</span> התקנה — Windows 🪟</h2>
+
+                <div style="max-width: 860px; margin: 0.15em auto;">
+                    <div class="fragment">
+                        <h3>PowerShell (מומלץ):</h3>
+                        <div class="code-box">irm https://claude.ai/install.ps1 | iex</div>
+                    </div>
+
+                    <div class="fragment" style="margin-top: 0.2em;">
+                        <div class="warning-box">
+                            <p style="font-size: 0.75em; line-height: 1.5; margin: 0;">
+                                ⚠️ <strong>חשוב:</strong> לאחר ההתקנה תקבלו path — הוסיפו אותו ל-<strong>User PATH</strong>:
+                            </p>
+                            <div style="margin-top: 0.2em; text-align: right; font-size: 0.7em; line-height: 1.6;">
+                                <span style="color: #42affa;">①</span> Win+R → הקלידו <code>sysdm.cpl</code> → Enter<br>
+                                <span style="color: #42affa;">②</span> Advanced → Environment Variables<br>
+                                <span style="color: #42affa;">③</span> תחת "User variables" → PATH → Edit → New<br>
+                                <span style="color: #42affa;">④</span> הדביקו את ה-path מהפלט → OK
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-card fragment" style="margin-top: 0.2em;">
+                        🔄 <strong>סגרו ופתחו מחדש</strong> את הטרמינל — ואז הריצו <code>claude --version</code>
+                    </div>
                 </div>
 
                 <aside class="notes">
-                    עצרו כאן! זה הזמן להתקנה.
-                    הסתובבו בין המשתתפים, עזרו למי שתקוע.
-                    Windows: PATH לא מתעדכן עד שסוגרים את הטרמינל — זו הטעות הכי נפוצה.
-                    Mac: הסקריפט מדפיס משהו כמו "source ~/.zshrc" — חייבים להריץ אותו.
-                    אל תמשיכו בלי שכולם מתקינים.
+                    PATH: זו הטעות הנפוצה ביותר ב-Windows — בלי PATH, claude לא נמצא.
+                    Win+R פותח את חלון Run. sysdm.cpl = System Properties.
+                    אם לא עובד — נסו לפתוח PowerShell חדש ולהריץ claude שוב.
+                    אם PowerShell חסומה: CMD → curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
                 </aside>
             </section>
 
@@ -416,7 +495,8 @@
                         <span class="step-number">3</span>
                         הפעילו את Claude Code מתוך התיקייה:
                         <div class="code-box" style="margin-top: 0.1em; font-size: 0.85em;">claude</div>
-                        <div style="font-size: 0.8em; color: #ccc;">בפעם הראשונה — הדפדפן ייפתח לכניסה עם חשבון Claude Pro</div>
+                        <div style="font-size: 0.8em; color: #ccc;">בפעם הראשונה — הדפדפן ייפתח לכניסה עם חשבון Claude
+                            Pro</div>
                     </div>
 
                     <div class="exercise-box fragment" style="margin-top: 0.15em;">
@@ -441,30 +521,31 @@
                 <div style="max-width: 860px; margin: 0.2em auto;">
                     <div class="fragment">
                         <h3>Claude תמיד ישאל אישור ל:</h3>
-                        <div class="step-card">✅ כתיבה ועריכה של קבצים</div>
-                        <div class="step-card">✅ הרצת פקודות (bash, git, npm...)</div>
-                        <div class="step-card">✅ מחיקת קבצים</div>
+                        <div class="step-card">✏️ כתיבה ועריכה של קבצים</div>
+                        <div class="step-card">⚡ הרצת פקודות (bash, git, npm...)</div>
+                        <div class="step-card">🗑️ מחיקת קבצים</div>
                     </div>
 
                     <div class="fragment" style="margin-top: 0.15em;">
-                        <div class="success-box">
-                            <p style="font-size: 0.75em; line-height: 1.3; margin: 0;">
-                                📖 קריאת קבצים — אוטומטי, ללא שאלה<br>
-                                🔍 חיפוש בקבצים — אוטומטי, ללא שאלה
+                        <div class="visual-card">
+                            <p style="font-size: 0.75em; line-height: 1.4; margin: 0;">
+                                📖 קריאת קבצים / 🔍 חיפוש — בגרסאות חדשות Claude עשוי לבקש אישור גם על אלה<br>
+                                <span style="color: #aaa; font-size: 0.9em;">ניתן להגדיר auto-approve ב-settings.json</span>
                             </p>
                         </div>
                     </div>
 
                     <div class="fragment" style="margin-top: 0.12em;">
-                        <div class="warning-box" style="display: flex; gap: 0.5em; align-items: center; justify-content: center;">
+                        <div class="warning-box"
+                            style="display: flex; gap: 0.5em; align-items: center; justify-content: center;">
                             <span style="font-size: 1.3em;">🛑</span>
-                            <p style="font-size: 0.8em; margin: 0;"><strong>Ctrl + C</strong> עוצר את Claude בכל רגע</p>
+                            <p style="font-size: 0.8em; margin: 0;"><strong>Ctrl + C</strong> עוצר את Claude בכל רגע — אפשר גם לכתוב "n" לסרב לפעולה בודדת</p>
                         </div>
                     </div>
 
                     <div class="fragment" style="margin-top: 0.12em;">
-                        <div class="visual-card">
-                            <p style="font-size: 0.75em; margin: 0;">💡 תמיד תקראו מה Claude מתכנן לעשות לפני שמאשרים</p>
+                        <div class="success-box">
+                            <p style="font-size: 0.75em; margin: 0;">💡 תמיד תקראו מה Claude מתכנן לעשות לפני שמאשרים — הכל שקוף</p>
                         </div>
                     </div>
                 </div>
@@ -486,29 +567,38 @@
                 <div style="max-width: 860px; margin: 0.2em auto;">
                     <div class="fragment">
                         <div class="visual-card">
-                            <p style="font-size: 0.9em; font-weight: bold; color: #42affa; margin-bottom: 0.15em;">Git = היסטוריית גרסאות אוטומטית</p>
+                            <p style="font-size: 0.9em; font-weight: bold; color: #42affa; margin-bottom: 0.15em;">Git =
+                                היסטוריית גרסאות אוטומטית</p>
                             <p style="font-size: 0.78em; margin: 0;">
-                                במקום <code>proposal_FINAL_v3_USE_THIS_ONE.docx</code><br>
-                                כל שינוי מקבל תווית, תאריך, ומי שינה — ואפשר תמיד לחזור אחורה
+                                במקום <code>proposal_FINAL_v3_USE_THIS.docx</code><br>
+                                כל שינוי מקבל תווית, תאריך ועוד — קל לחזור אחורה
                             </p>
                         </div>
                     </div>
 
                     <div class="fragment" style="margin-top: 0.2em;">
                         <div class="visual-card">
-                            <p style="font-size: 0.9em; font-weight: bold; color: #42affa; margin-bottom: 0.15em;">Branches = גרסאות מקבילות</p>
-                            <div style="display: flex; justify-content: space-around; align-items: center; font-size: 0.75em; margin-top: 0.1em;">
+                            <p style="font-size: 0.9em; font-weight: bold; color: #42affa; margin-bottom: 0.15em;">
+                                Branches = גרסאות מקבילות</p>
+                            <div
+                                style="display: flex; justify-content: space-around; align-items: center; font-size: 0.75em; margin-top: 0.1em;">
                                 <div style="text-align: center;">
-                                    <div style="background: rgba(81,207,102,0.2); border: 1px solid #51cf66; border-radius: 4px; padding: 0.2em 0.5em; font-weight: bold;">main</div>
+                                    <div
+                                        style="background: rgba(81,207,102,0.2); border: 1px solid #51cf66; border-radius: 4px; padding: 0.2em 0.5em; font-weight: bold;">
+                                        main</div>
                                     <div style="color: #51cf66; font-size: 0.85em; margin-top: 0.1em;">מאושר, יציב</div>
                                 </div>
                                 <div style="font-size: 1.5em; color: #555;">↔</div>
                                 <div style="text-align: center;">
-                                    <div style="background: rgba(255,149,0,0.2); border: 1px solid #FF9500; border-radius: 4px; padding: 0.2em 0.5em;">feature/login</div>
-                                    <div style="color: #FF9500; font-size: 0.85em; margin-top: 0.1em;">בפיתוח, טרם אושר</div>
+                                    <div
+                                        style="background: rgba(255,149,0,0.2); border: 1px solid #FF9500; border-radius: 4px; padding: 0.2em 0.5em;">
+                                        feature/login</div>
+                                    <div style="color: #FF9500; font-size: 0.85em; margin-top: 0.1em;">בפיתוח, טרם אושר
+                                    </div>
                                 </div>
                             </div>
-                            <p style="font-size: 0.73em; margin-top: 0.15em;">כשה-branch מוכן ועבר review → ממזגים ל-main</p>
+                            <p style="font-size: 0.73em; margin-top: 0.15em;">כשה-branch מוכן ועבר review → ממזגים
+                                ל-main</p>
                         </div>
                     </div>
 
@@ -516,7 +606,7 @@
                         <div class="success-box">
                             <p style="font-size: 0.78em; margin: 0;">
                                 ☁️ <strong>GitHub</strong> = המקום בענן שמאחסן את ה-repository<br>
-                                היום נוריד את ה-Toolkit מה-<strong>main</strong> branch — הגרסה המאושרת
+                                היום נוריד את ה-Toolkit מה-<strong>main</strong> branch
                             </p>
                         </div>
                     </div>
@@ -535,17 +625,16 @@
             <section>
                 <h2><span class="hands-on-badge">✋ ביחד</span> מורידים את ה-Toolkit 📥</h2>
 
-                <p style="font-size: 0.85em; margin-bottom: 0.3em;">כתבו ב-Claude Code בדיוק כך:</p>
+                <p style="font-size: 0.8em; margin-bottom: 0.2em;">כתבו ב-Claude Code בדיוק כך:</p>
 
-                <div class="demo-frame" style="text-align: left; direction: ltr; font-size: 0.9em; max-width: 760px; margin: 0 auto;">
+                <div class="demo-frame"
+                    style="text-align: left; direction: ltr; font-size: 0.88em; max-width: 760px; margin: 0 auto; padding: 0.4em 0.7em;">
                     Download and set up the GitHub project at<br>
                     https://github.com/yonyosk/claude-code-workshop
                 </div>
 
-                <div class="fragment visual-card" style="margin-top: 0.5em;">
-                    <p class="big-icon">💡</p>
-                    <p style="font-size: 0.9em;"><em>"שימו לב — לא הקלדתי פקודת git אחת.</em></p>
-                    <p style="font-size: 0.9em;"><em>אמרתי מה אני רוצה. Claude Code הבין ועשה."</em></p>
+                <div class="fragment visual-card" style="margin-top: 0.25em; padding: 0.25em 0.4em;">
+                    <p style="font-size: 0.82em; margin: 0;">💡 <em>"לא הקלדתי פקודת git אחת — אמרתי מה אני רוצה. Claude Code הבין ועשה."</em></p>
                 </div>
 
                 <div class="exercise-box fragment" style="margin-top: 0.2em;">
@@ -566,39 +655,45 @@
             <section>
                 <h2><span class="explain-badge">📖 הסבר</span> לפני שממשיכים ⚡</h2>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6em; max-width: 880px; margin: 0.2em auto;">
+                <div style="max-width: 880px; margin: 0.1em auto;">
 
+                    <!-- Shortcuts section -->
                     <div class="fragment">
-                        <h3>קיצורי מקלדת</h3>
-                        <div class="step-card" style="background: rgba(81,207,102,0.12); border-color: #51cf66;">
-                            <strong>Ctrl + G</strong><br>
-                            <span style="font-size: 0.85em;">כתיבה בעברית + עורך טקסט נוח</span>
-                        </div>
-                        <div class="step-card" style="background: rgba(255,107,107,0.12); border-color: #ff6b6b; margin-top: 0.1em;">
-                            <strong>Ctrl + C</strong><br>
-                            <span style="font-size: 0.85em;">עצור את Claude באמצע</span>
+                        <p style="font-size: 0.8em; font-weight: bold; color: #42affa; margin: 0 0 0.15em 0; text-align: right;">⌨️ קיצורי מקלדת שימושיים</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.3em;">
+                            <div class="step-card" style="background: rgba(81,207,102,0.12); border-color: #51cf66; font-size: 0.78em;">
+                                <strong>Ctrl + G</strong> — כתיבה בעברית ועורך טקסט נוח
+                            </div>
+                            <div class="step-card" style="background: rgba(255,107,107,0.12); border-color: #ff6b6b; font-size: 0.78em;">
+                                <strong>Ctrl + C</strong> — עצור את Claude באמצע
+                            </div>
                         </div>
                     </div>
 
+                    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 0.3em 0;">
+
+                    <!-- Mistakes section -->
                     <div class="fragment">
-                        <h3>טעויות נפוצות ⚠️</h3>
-                        <div class="warning-box">
-                            <p style="font-size: 0.7em; line-height: 1.3; margin: 0;">
-                                ❌ להריץ Claude מהome directory<br>
-                                → <strong>תמיד מתיקיית הפרויקט!</strong>
-                            </p>
-                        </div>
-                        <div class="warning-box" style="margin-top: 0.1em;">
-                            <p style="font-size: 0.7em; line-height: 1.3; margin: 0;">
-                                ❌ הוראות מעורפלות<br>
-                                → <strong>ספציפיים = תוצאות טובות</strong>
-                            </p>
-                        </div>
-                        <div class="warning-box" style="margin-top: 0.1em;">
-                            <p style="font-size: 0.7em; line-height: 1.3; margin: 0;">
-                                ❌ לאשר בלי לקרוא<br>
-                                → <strong>תמיד תקראו מה Claude עושה</strong>
-                            </p>
+                        <p style="font-size: 0.8em; font-weight: bold; color: #ff6b6b; margin: 0 0 0.15em 0; text-align: right;">⚠️ טעויות נפוצות שכדאי להכיר</p>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.25em;">
+                            <div class="warning-box">
+                                <p style="font-size: 0.65em; line-height: 1.3; margin: 0;">
+                                    ❌ להריץ Claude מה-Home directory<br>
+                                    → <strong>תמיד מתיקיית הפרויקט!</strong>
+                                </p>
+                            </div>
+                            <div class="warning-box">
+                                <p style="font-size: 0.65em; line-height: 1.3; margin: 0;">
+                                    ❌ הוראות מעורפלות<br>
+                                    → <strong>ספציפיים = תוצאות טובות</strong>
+                                </p>
+                            </div>
+                            <div class="warning-box">
+                                <p style="font-size: 0.65em; line-height: 1.3; margin: 0;">
+                                    ❌ לאשר בלי לקרוא<br>
+                                    → <strong>תמיד תקראו מה Claude עושה</strong>
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -617,36 +712,35 @@
             <section>
                 <h2><span class="explain-badge">📖 הסבר</span> מה זה CLAUDE.md? 📄</h2>
 
-                <div style="max-width: 860px; margin: 0.2em auto;">
+                <div style="max-width: 860px; margin: 0.1em auto;">
                     <div class="fragment">
-                        <div class="visual-card">
-                            <p style="font-size: 0.95em; font-weight: bold; color: #42affa; margin-bottom: 0.1em;">הוראות קבועות שחוזרות על עצמן</p>
-                            <p style="font-size: 0.78em; margin: 0;">
-                                "תמיד כתוב בעברית"<br>
-                                "תמיד כלול שאלות פתוחות בכל מסמך"<br>
-                                "השתמש ב-RICE לתעדוף"
+                        <div class="visual-card" style="padding: 0.2em 0.4em;">
+                            <p style="font-size: 0.85em; font-weight: bold; color: #42affa; margin-bottom: 0.05em;">
+                                הוראות קבועות שחוזרות על עצמן</p>
+                            <p style="font-size: 0.72em; margin: 0;">
+                                "תמיד כתוב בעברית" &nbsp;·&nbsp; "תמיד כלול שאלות פתוחות בכל מסמך" &nbsp;·&nbsp; "השתמש ב-RICE לתעדוף"
                             </p>
                         </div>
                     </div>
 
-                    <div class="fragment" style="margin-top: 0.2em;">
-                        <div class="tip-grid">
-                            <div class="tip-card">
+                    <div class="fragment" style="margin-top: 0.15em;">
+                        <div class="tip-grid" style="gap: 0.15em;">
+                            <div class="tip-card" style="padding: 0.2em 0.25em;">
                                 <div class="tip-icon">🎯</div>
                                 <strong>הקשר הפרויקט</strong><br>
                                 מה בונים, מי המשתמשים, מי הסטייקהולדרים
                             </div>
-                            <div class="tip-card">
+                            <div class="tip-card" style="padding: 0.2em 0.25em;">
                                 <div class="tip-icon">📐</div>
                                 <strong>סטנדרטים</strong><br>
                                 פורמטים, שפה, רמת פירוט
                             </div>
-                            <div class="tip-card">
+                            <div class="tip-card" style="padding: 0.2em 0.25em;">
                                 <div class="tip-icon">🚫</div>
                                 <strong>גבולות</strong><br>
                                 מה לא לגעת, מה לא לשנות
                             </div>
-                            <div class="tip-card">
+                            <div class="tip-card" style="padding: 0.2em 0.25em;">
                                 <div class="tip-icon">🔁</div>
                                 <strong>תהליכים</strong><br>
                                 מה לעשות בכל פעם שמנתחים באגים / כותבים PRD
@@ -655,8 +749,8 @@
                     </div>
 
                     <div class="fragment" style="margin-top: 0.15em;">
-                        <div class="success-box">
-                            <p style="font-size: 0.75em; margin: 0;">
+                        <div class="success-box" style="padding: 0.15em 0.4em;">
+                            <p style="font-size: 0.72em; margin: 0;">
                                 ✅ Claude קורא את CLAUDE.md אוטומטית בכל session<br>
                                 💡 זה <strong>לא</strong> מקום לאחסן מידע — לשם יש ל-Claude <strong>memory</strong> משלו
                             </p>
@@ -678,39 +772,51 @@
             <section>
                 <h2><span class="explain-badge">📖 הסבר</span> מבנה הקבצים 📁</h2>
 
-                <div style="display: flex; justify-content: space-around; gap: 0.6em; max-width: 900px; margin: 0.2em auto; font-size: 0.72em;">
+                <div style="max-width: 900px; margin: 0.15em auto; font-size: 0.78em;">
 
-                    <div class="visual-card" style="flex: 1; text-align: right;">
-                        <p style="font-weight: bold; color: #42affa; margin-bottom: 0.1em;">~/.claude/ &nbsp;|&nbsp; C:\Users\[שם]\.claude\</p>
-                        <p style="color: #aaa; font-size: 0.9em; margin-bottom: 0.15em;">רק שלך — חוצה פרויקטים</p>
-                        <hr style="border-color: rgba(66,175,250,0.25); margin: 0.15em 0;">
-                        <p>📄 CLAUDE.md <span style="color:#aaa; font-size:0.85em;">(הוראות ברמת משתמש)</span></p>
-                        <p>🤖 agents/</p>
-                        <p>⚡ skills/</p>
-                        <p>🧠 projects/[project]/memory/ <span style="color:#aaa; font-size:0.85em;">(Claude כותב לעצמו)</span></p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em;" class="fragment">
+
+                        <!-- User-level -->
+                        <div class="visual-card" style="text-align: right; padding: 0.3em 0.5em;">
+                            <p style="font-weight: bold; color: #42affa; margin: 0 0 0.05em 0; font-size: 1em;">🌐 ברמת המשתמש</p>
+                            <p style="color: #aaa; font-size: 0.82em; margin: 0 0 0.15em 0;">אישי — חוצה כל הפרויקטים</p>
+                            <div style="background: rgba(0,0,0,0.3); border-radius: 4px; padding: 0.2em 0.4em; font-family: 'Courier New', monospace; font-size: 0.88em; direction: ltr; text-align: left;">
+                                ~/.claude/<br>
+                                C:\Users\[user]\.claude\
+                            </div>
+                            <div style="margin-top: 0.15em; font-size: 0.85em; line-height: 1.5;">
+                                📄 CLAUDE.md <span style="color:#aaa;">(הוראות כלליות)</span><br>
+                                🤖 agents/ &nbsp; ⚡ skills/<br>
+                                🧠 projects/[proj]/memory/ <span style="color:#aaa;">(Claude כותב לעצמו)</span>
+                            </div>
+                        </div>
+
+                        <!-- Project-level -->
+                        <div class="visual-card" style="text-align: right; padding: 0.3em 0.5em;">
+                            <p style="font-weight: bold; color: #42affa; margin: 0 0 0.05em 0; font-size: 1em;">📁 ברמת הפרויקט</p>
+                            <p style="color: #aaa; font-size: 0.82em; margin: 0 0 0.15em 0;">משותף — עולה ל-GitHub עם הקוד</p>
+                            <div style="background: rgba(0,0,0,0.3); border-radius: 4px; padding: 0.2em 0.4em; font-family: 'Courier New', monospace; font-size: 0.88em; direction: ltr; text-align: left;">
+                                [project-folder]/.claude/
+                            </div>
+                            <div style="margin-top: 0.15em; font-size: 0.85em; line-height: 1.5;">
+                                📄 CLAUDE.md <span style="color:#aaa;">(הוראות לפרויקט)</span><br>
+                                🤖 agents/ &nbsp; ⚡ skills/<br>
+                                ⚙️ settings.json
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div style="display: flex; align-items: center; font-size: 1.3em; color: #555;">↔</div>
-
-                    <div class="visual-card" style="flex: 1; text-align: right;">
-                        <p style="font-weight: bold; color: #42affa; margin-bottom: 0.1em;">[project-folder]/.claude/</p>
-                        <p style="color: #aaa; font-size: 0.9em; margin-bottom: 0.15em;">של הפרויקט — שיתוף עם צוות / GitHub</p>
-                        <hr style="border-color: rgba(66,175,250,0.25); margin: 0.15em 0;">
-                        <p>📄 CLAUDE.md <span style="color:#aaa; font-size:0.85em;">(הוראות לפרויקט)</span></p>
-                        <p>🤖 agents/</p>
-                        <p>⚡ skills/</p>
-                        <p>⚙️ settings.json</p>
+                    <div class="fragment" style="margin-top: 0.2em;">
+                        <div class="success-box" style="padding: 0.15em 0.4em;">
+                            <p style="font-size: 0.72em; margin: 0;">
+                                💡 <strong>CLAUDE.md</strong> = אתם כותבים הוראות &nbsp;|&nbsp;
+                                <strong>Memory</strong> = Claude כותב לעצמו בין sessions &nbsp;|&nbsp;
+                                <span style="color: #aaa;">ה-Toolkit כבר כולל .claude/ מוכן</span>
+                            </p>
+                        </div>
                     </div>
 
-                </div>
-
-                <div class="fragment" style="margin-top: 0.3em;">
-                    <div class="success-box" style="max-width: 90%; margin: 0 auto;">
-                        <p style="font-size: 0.75em; margin: 0;">
-                            💡 <strong>CLAUDE.md</strong> = אתם כותבים הוראות ל-Claude &nbsp;|&nbsp;
-                            <strong>Memory</strong> = Claude כותב סיכומים לעצמו בין sessions
-                        </p>
-                    </div>
                 </div>
 
                 <aside class="notes">
@@ -740,7 +846,7 @@
                             <tr>
                                 <td><strong>מי מפעיל</strong></td>
                                 <td>Claude מחליט מתי לקרוא</td>
-                                <td>אתם — <code>/skill-name</code></td>
+                                <td>אתם (<code>/skill-name</code>) — <em>או</em> Claude לפי תיאור ה-skill</td>
                             </tr>
                             <tr style="background: rgba(255,255,255,0.04);">
                                 <td><strong>הקשר</strong></td>
@@ -762,7 +868,8 @@
                 </div>
 
                 <div class="fragment visual-card" style="margin-top: 0.35em;">
-                    <p style="font-size: 0.85em; margin: 0;">💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק את הפלט הסופי</em></p>
+                    <p style="font-size: 0.85em; margin: 0;">💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק את הפלט
+                            הסופי</em></p>
                 </div>
 
                 <aside class="notes">
@@ -806,7 +913,8 @@
                     </div>
                     <div class="tip-card fragment">
                         <div class="tip-icon">📋</div>
-                        <strong>/prioritize &nbsp;/create-user-stories</strong> <span style="color:#aaa;">(skills)</span><br>
+                        <strong>/prioritize &nbsp;/create-user-stories</strong> <span
+                            style="color:#aaa;">(skills)</span><br>
                         תעדוף עם RICE + כתיבת user stories
                     </div>
                 </div>
@@ -902,8 +1010,10 @@
                 <div class="fragment" style="margin-top: 0.3em;">
                     <div class="success-box" style="max-width: 90%; margin: 0 auto;">
                         <p style="font-size: 0.78em; margin: 0;">
-                            🎯 <strong>מחר בבוקר:</strong> פתחו Claude Code עם הפרויקט האמיתי שלכם — שנו CLAUDE.md → התחילו<br>
-                            <span style="color: #aaa; font-size: 0.9em;">✨ בונוס אם נשאר זמן: נוסיף ניתוח פידבק ונראה חיבורים לבאגים</span>
+                            🎯 <strong>מחר בבוקר:</strong> פתחו Claude Code עם הפרויקט האמיתי שלכם — שנו CLAUDE.md →
+                            התחילו<br>
+                            <span style="color: #aaa; font-size: 0.9em;">✨ בונוס אם נשאר זמן: נוסיף ניתוח פידבק ונראה
+                                חיבורים לבאגים</span>
                         </p>
                     </div>
                 </div>
@@ -911,14 +1021,19 @@
                 <aside class="notes">
                     עברו על ה-6 results בקצב.
                     "כל מה שעשיתם היום — אפשר לחזור ולעשות עם הפרויקט האמיתי שלכם."
-                    בונוס: אם נשאר 10 דקות — "תנתח גם את user-feedback.txt ותגיד לי אם יש נושאים שחוזרים על באגים שמצאנו."
+                    בונוס: אם נשאר 10 דקות — "תנתח גם את user-feedback.txt ותגיד לי אם יש נושאים שחוזרים על באגים
+                    שמצאנו."
                 </aside>
             </section>
 
             <!-- ═══════════════════════════════════════════════
                  Slide 15: Thank You
             ════════════════════════════════════════════════ -->
-            <section class="center">
+            <section class="center" style="position: relative;">
+                <!-- LinkedIn QR Code on the left -->
+                <img src="images/linkedin_qr.jpg" alt="LinkedIn QR Code"
+                    style="position: absolute; left: -10px; top: 15%; transform: translateY(-20%); width: 280px; height: 280px; border: 3px solid #42affa; border-radius: 12px; padding: 5px; background: white; z-index: 10;">
+
                 <h2>תודה! 🙏</h2>
                 <div style="margin: 0.8em 0;">
                     <p style="font-size: 1.15em;"><strong>יונתן קרמר</strong></p>
@@ -929,7 +1044,8 @@
                         </a>
                     </p>
                     <p style="margin: 0.3em 0;">
-                        <a href="https://github.com/yonyosk/claude-code-workshop" style="color: #42affa; font-size: 0.85em;">
+                        <a href="https://github.com/yonyosk/claude-code-workshop"
+                            style="color: #42affa; font-size: 0.85em;">
                             github.com/yonyosk/claude-code-workshop
                         </a>
                     </p>
@@ -959,8 +1075,12 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js" integrity="sha384-pcvWxkmpELJRfdSUAxBpLYLhA9vF4LnfBamyHqUYyt+7vb606t7WzpBmXRmrkFvQ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js" integrity="sha384-uGY994LqWhR6DceAusk0BjkwDgzWyj6cq0OskKeUtyUOqv4s77I7JAyepDX+NSi/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"
+        integrity="sha384-pcvWxkmpELJRfdSUAxBpLYLhA9vF4LnfBamyHqUYyt+7vb606t7WzpBmXRmrkFvQ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"
+        integrity="sha384-uGY994LqWhR6DceAusk0BjkwDgzWyj6cq0OskKeUtyUOqv4s77I7JAyepDX+NSi/"
+        crossorigin="anonymous"></script>
     <script>
         Reveal.initialize({
             hash: true,
