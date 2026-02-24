@@ -397,75 +397,78 @@
             </section>
 
             <!-- ═══════════════════════════════════════════════
-                 Slide 3a: Installation — Mac / Linux / WSL
+                 Slide 3: Installation
             ════════════════════════════════════════════════ -->
             <section>
-                <h2><span class="hands-on-badge">✋ ביחד</span> התקנה — Mac / Linux / WSL 🍎🐧</h2>
+                <h2><span class="hands-on-badge">✋ ביחד</span> התקנה 💻</h2>
 
                 <div style="max-width: 860px; margin: 0.2em auto;">
-                    <div class="fragment">
-                        <h3>הריצו בטרמינל:</h3>
-                        <div class="code-box">curl -fsSL https://claude.ai/install.sh | bash</div>
-                    </div>
-
-                    <div class="fragment" style="margin-top: 0.25em;">
-                        <div class="warning-box">
-                            <p style="font-size: 0.75em; line-height: 1.5; margin: 0;">
-                                ⚠️ <strong>Mac:</strong> לאחר ההתקנה הסקריפט ידפיס פקודה כמו:<br>
-                                <code style="font-size: 0.9em;">source ~/.zshrc</code><br>
-                                הריצו אותה — ואז <strong>סגרו ופתחו מחדש</strong> את הטרמינל
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em;" class="fragment">
+                        <div>
+                            <h3>🍎🐧 Mac / Linux / WSL:</h3>
+                            <div class="code-box">curl -fsSL https://claude.ai/install.sh | bash</div>
+                            <p style="font-size: 0.65em; color: #aaa; margin: 0.15em 0 0 0; text-align: right;">
+                                ⚠️ Mac: הריצו <code>source ~/.zshrc</code> לאחר ההתקנה
+                            </p>
+                        </div>
+                        <div>
+                            <h3>🪟 Windows PowerShell:</h3>
+                            <div class="code-box">irm https://claude.ai/install.ps1 | iex</div>
+                            <p style="font-size: 0.65em; color: #aaa; margin: 0.15em 0 0 0; text-align: right;">
+                                ⚠️ Windows: הוספת PATH נדרשת — ראו סלייד הבא
                             </p>
                         </div>
                     </div>
 
-                    <div class="exercise-box fragment" style="margin-top: 0.25em;">
-                        <p class="exercise-title">⏱️ אחרי ההתקנה: הריצו <code>claude --version</code> — רואים גרסה? 🎉</p>
+                    <div class="exercise-box fragment" style="margin-top: 0.3em;">
+                        <p class="exercise-title">⏱️ עכשיו מתקינים — 5 דקות. תרימו יד אם תקועים!</p>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Mac: source ~/.zshrc — בלי זה claude לא נמצא בטרמינל.
-                    Linux/WSL: בדרך כלל עובד ישר, אותה פקודה.
+                    עצרו כאן! כולם מתקינים בו-זמנית.
+                    Mac: source ~/.zshrc — בלי זה claude לא נמצא בטרמינל. סגרו ופתחו מחדש.
+                    Windows: PATH להוסיף — עברו לסלייד הבא בזמן שהם מתקינים.
                     אל תמשיכו בלי שכולם מותקנים.
                 </aside>
             </section>
 
             <!-- ═══════════════════════════════════════════════
-                 Slide 3b: Installation — Windows
+                 Slide 3b: Windows PATH
             ════════════════════════════════════════════════ -->
             <section>
-                <h2><span class="hands-on-badge">✋ ביחד</span> התקנה — Windows 🪟</h2>
+                <h2><span class="explain-badge">📖 Windows</span> הוספת PATH 🪟</h2>
 
-                <div style="max-width: 860px; margin: 0.15em auto;">
-                    <div class="fragment">
-                        <h3>PowerShell (מומלץ):</h3>
-                        <div class="code-box">irm https://claude.ai/install.ps1 | iex</div>
+                <div style="max-width: 840px; margin: 0.2em auto;">
+                    <div class="visual-card fragment" style="padding: 0.2em 0.4em;">
+                        <p style="font-size: 0.8em; margin: 0;">לאחר ההתקנה Windows יציג path — הוסיפו אותו ל-<strong>User PATH</strong>:</p>
                     </div>
 
                     <div class="fragment" style="margin-top: 0.2em;">
-                        <div class="warning-box">
-                            <p style="font-size: 0.75em; line-height: 1.5; margin: 0;">
-                                ⚠️ <strong>חשוב:</strong> לאחר ההתקנה תקבלו path — הוסיפו אותו ל-<strong>User PATH</strong>:
-                            </p>
-                            <div style="margin-top: 0.2em; text-align: right; font-size: 0.7em; line-height: 1.6;">
-                                <span style="color: #42affa;">①</span> Win+R → הקלידו <code>sysdm.cpl</code> → Enter<br>
-                                <span style="color: #42affa;">②</span> Advanced → Environment Variables<br>
-                                <span style="color: #42affa;">③</span> תחת "User variables" → PATH → Edit → New<br>
-                                <span style="color: #42affa;">④</span> הדביקו את ה-path מהפלט → OK
-                            </div>
+                        <div class="step-card">
+                            <span class="step-number">1</span>
+                            חפשו <strong>"environment variables"</strong> בחיפוש Windows (🔍 ליד כפתור Start)
+                            <div style="font-size: 0.8em; color: #aaa; margin-top: 0.05em;">התוצאה "Edit the system environment variables" תפתח ישירות למקום הנכון</div>
+                        </div>
+                        <div class="step-card" style="margin-top: 0.1em;">
+                            <span class="step-number">2</span>
+                            לחצו "Environment Variables" ← תחת "User variables" בחרו PATH ← Edit ← New
+                        </div>
+                        <div class="step-card" style="margin-top: 0.1em;">
+                            <span class="step-number">3</span>
+                            הדביקו את ה-path מהפלט ← OK ← פתחו טרמינל חדש
                         </div>
                     </div>
 
-                    <div class="step-card fragment" style="margin-top: 0.2em;">
-                        🔄 <strong>סגרו ופתחו מחדש</strong> את הטרמינל — ואז הריצו <code>claude --version</code>
+                    <div class="success-box fragment" style="margin-top: 0.2em; padding: 0.15em 0.4em;">
+                        <p style="font-size: 0.75em; margin: 0;">✅ כתבו <code>claude --version</code> — רואים גרסה? הכל עובד!</p>
                     </div>
                 </div>
 
                 <aside class="notes">
                     PATH: זו הטעות הנפוצה ביותר ב-Windows — בלי PATH, claude לא נמצא.
-                    Win+R פותח את חלון Run. sysdm.cpl = System Properties.
-                    אם לא עובד — נסו לפתוח PowerShell חדש ולהריץ claude שוב.
-                    אם PowerShell חסומה: CMD → curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+                    חיפוש Windows: לחצו על סמל הזכוכית המגדלת ליד Start, כתבו "environment variables".
+                    אם PowerShell חסומה: CMD — curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
                 </aside>
             </section>
 
@@ -486,8 +489,8 @@
                         <span class="step-number">2</span>
                         צרו תיקייה לסדנה (בשם <strong>workshop</strong>) ופתחו בה טרמינל חדש
                         <div style="font-size: 0.8em; color: #aaa; margin-top: 0.1em;">
-                            Windows: ניווט לתיקייה → Shift + לחיצה ימנית → "Open in Terminal"<br>
-                            Mac: ניווט לתיקייה → Terminal → <code style="font-size:0.9em;">cd ~/Desktop/workshop</code>
+                            Windows: ניווט לתיקייה ← Shift + לחיצה ימנית ← "Open in Terminal"<br>
+                            Mac: ניווט לתיקייה ← Terminal ← <code style="font-size:0.9em;">cd ~/Desktop/workshop</code>
                         </div>
                     </div>
 
@@ -539,7 +542,7 @@
                         <div class="warning-box"
                             style="display: flex; gap: 0.5em; align-items: center; justify-content: center;">
                             <span style="font-size: 1.3em;">🛑</span>
-                            <p style="font-size: 0.8em; margin: 0;"><strong>Ctrl + C</strong> עוצר את Claude בכל רגע — אפשר גם לכתוב "n" לסרב לפעולה בודדת</p>
+                            <p style="font-size: 0.8em; margin: 0;"><strong>ESC</strong> מפסיק את Claude בכל רגע — אפשר גם לכתוב "n" לסרב לפעולה בודדת</p>
                         </div>
                     </div>
 
@@ -597,8 +600,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p style="font-size: 0.73em; margin-top: 0.15em;">כשה-branch מוכן ועבר review → ממזגים
-                                ל-main</p>
+                            <p style="font-size: 0.73em; margin-top: 0.15em;">כשה-branch מוכן ועבר review ← ממזגים ל-main</p>
                         </div>
                     </div>
 
@@ -628,12 +630,12 @@
                 <p style="font-size: 0.8em; margin-bottom: 0.2em;">כתבו ב-Claude Code בדיוק כך:</p>
 
                 <div class="demo-frame"
-                    style="text-align: left; direction: ltr; font-size: 0.88em; max-width: 760px; margin: 0 auto; padding: 0.4em 0.7em;">
-                    Download and set up the GitHub project at<br>
-                    https://github.com/yonyosk/claude-code-workshop
+                    style="text-align: left; direction: ltr; font-size: 0.78em; max-width: 820px; margin: 0 auto; padding: 0.4em 0.7em; white-space: nowrap;">
+                    Download and set up the GitHub project at https://github.com/yonyosk/claude-code-workshop
                 </div>
+                <p style="font-size: 0.62em; color: #aaa; margin: 0.1em 0 0 0;">💡 לא יכולים להקליד? סרקו את ה-QR בסלייד האחרון ← פתחו בדפדפן ← העתיקו את ה-URL</p>
 
-                <div class="fragment visual-card" style="margin-top: 0.25em; padding: 0.25em 0.4em;">
+                <div class="fragment visual-card" style="margin-top: 0.2em; padding: 0.25em 0.4em;">
                     <p style="font-size: 0.82em; margin: 0;">💡 <em>"לא הקלדתי פקודת git אחת — אמרתי מה אני רוצה. Claude Code הבין ועשה."</em></p>
                 </div>
 
@@ -665,7 +667,7 @@
                                 <strong>Ctrl + G</strong> — כתיבה בעברית ועורך טקסט נוח
                             </div>
                             <div class="step-card" style="background: rgba(255,107,107,0.12); border-color: #ff6b6b; font-size: 0.78em;">
-                                <strong>Ctrl + C</strong> — עצור את Claude באמצע
+                                <strong>ESC</strong> — הפסיקו את Claude באמצע
                             </div>
                         </div>
                     </div>
@@ -679,19 +681,19 @@
                             <div class="warning-box">
                                 <p style="font-size: 0.65em; line-height: 1.3; margin: 0;">
                                     ❌ להריץ Claude מה-Home directory<br>
-                                    → <strong>תמיד מתיקיית הפרויקט!</strong>
+                                    ← <strong>תמיד מתיקיית הפרויקט!</strong>
                                 </p>
                             </div>
                             <div class="warning-box">
                                 <p style="font-size: 0.65em; line-height: 1.3; margin: 0;">
                                     ❌ הוראות מעורפלות<br>
-                                    → <strong>ספציפיים = תוצאות טובות</strong>
+                                    ← <strong>ספציפיים = תוצאות טובות</strong>
                                 </p>
                             </div>
                             <div class="warning-box">
                                 <p style="font-size: 0.65em; line-height: 1.3; margin: 0;">
                                     ❌ לאשר בלי לקרוא<br>
-                                    → <strong>תמיד תקראו מה Claude עושה</strong>
+                                    ← <strong>תמיד תקראו מה Claude עושה</strong>
                                 </p>
                             </div>
                         </div>
@@ -701,18 +703,18 @@
 
                 <aside class="notes">
                     Ctrl+G: "הכי שימושי לקהל שלנו — עברית ישירה בטרמינל."
-                    Ctrl+C: "אל תפחדו לעצור — הכלי לא קורס."
-                    טעויות: "90% מהבעיות שראיתי בסדנאות הן מהome directory."
+                    ESC: "הדרך העיקרית לעצור — Claude ישאל מה לעשות. Ctrl+C סוגר לגמרי."
+                    טעויות: "90% מהבעיות שראיתי בסדנאות הן מהHome directory."
                 </aside>
             </section>
 
             <!-- ═══════════════════════════════════════════════
                  Slide 9: CLAUDE.md
             ════════════════════════════════════════════════ -->
-            <section>
+            <section style="top: 0;">
                 <h2><span class="explain-badge">📖 הסבר</span> מה זה CLAUDE.md? 📄</h2>
 
-                <div style="max-width: 860px; margin: 0.1em auto;">
+                <div style="max-width: 860px; margin: 0.05em auto;">
                     <div class="fragment">
                         <div class="visual-card" style="padding: 0.2em 0.4em;">
                             <p style="font-size: 0.85em; font-weight: bold; color: #42affa; margin-bottom: 0.05em;">
@@ -752,7 +754,7 @@
                         <div class="success-box" style="padding: 0.15em 0.4em;">
                             <p style="font-size: 0.72em; margin: 0;">
                                 ✅ Claude קורא את CLAUDE.md אוטומטית בכל session<br>
-                                💡 זה <strong>לא</strong> מקום לאחסן מידע — לשם יש ל-Claude <strong>memory</strong> משלו
+                                💡 זה מקום לכללי עבודה — לא לשמור מידע ספציפי מ-session
                             </p>
                         </div>
                     </div>
@@ -769,39 +771,37 @@
             <!-- ═══════════════════════════════════════════════
                  Slide 10: File Structure
             ════════════════════════════════════════════════ -->
-            <section>
+            <section style="top: 0;">
                 <h2><span class="explain-badge">📖 הסבר</span> מבנה הקבצים 📁</h2>
 
-                <div style="max-width: 900px; margin: 0.15em auto; font-size: 0.78em;">
+                <div style="max-width: 900px; margin: 0.1em auto; font-size: 0.78em;">
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em;" class="fragment">
 
                         <!-- User-level -->
-                        <div class="visual-card" style="text-align: right; padding: 0.3em 0.5em;">
+                        <div class="visual-card" style="text-align: right; padding: 0.25em 0.5em;">
                             <p style="font-weight: bold; color: #42affa; margin: 0 0 0.05em 0; font-size: 1em;">🌐 ברמת המשתמש</p>
-                            <p style="color: #aaa; font-size: 0.82em; margin: 0 0 0.15em 0;">אישי — חוצה כל הפרויקטים</p>
-                            <div style="background: rgba(0,0,0,0.3); border-radius: 4px; padding: 0.2em 0.4em; font-family: 'Courier New', monospace; font-size: 0.88em; direction: ltr; text-align: left;">
-                                ~/.claude/<br>
-                                C:\Users\[user]\.claude\
+                            <p style="color: #aaa; font-size: 0.82em; margin: 0 0 0.12em 0;">אישי — חוצה כל הפרויקטים</p>
+                            <div style="background: rgba(0,0,0,0.3); border-radius: 4px; padding: 0.15em 0.4em; font-family: 'Courier New', monospace; font-size: 0.82em; direction: ltr; text-align: left; line-height: 1.6;">
+                                Mac/Linux: ~/.claude/<br>
+                                Windows: C:\Users\[user]\.claude\
                             </div>
-                            <div style="margin-top: 0.15em; font-size: 0.85em; line-height: 1.5;">
+                            <div style="margin-top: 0.12em; font-size: 0.85em; line-height: 1.5;">
                                 📄 CLAUDE.md <span style="color:#aaa;">(הוראות כלליות)</span><br>
-                                🤖 agents/ &nbsp; ⚡ skills/<br>
-                                🧠 projects/[proj]/memory/ <span style="color:#aaa;">(Claude כותב לעצמו)</span>
+                                🤖 agents/ &nbsp; ⚡ skills/
                             </div>
                         </div>
 
                         <!-- Project-level -->
-                        <div class="visual-card" style="text-align: right; padding: 0.3em 0.5em;">
+                        <div class="visual-card" style="text-align: right; padding: 0.25em 0.5em;">
                             <p style="font-weight: bold; color: #42affa; margin: 0 0 0.05em 0; font-size: 1em;">📁 ברמת הפרויקט</p>
-                            <p style="color: #aaa; font-size: 0.82em; margin: 0 0 0.15em 0;">משותף — עולה ל-GitHub עם הקוד</p>
-                            <div style="background: rgba(0,0,0,0.3); border-radius: 4px; padding: 0.2em 0.4em; font-family: 'Courier New', monospace; font-size: 0.88em; direction: ltr; text-align: left;">
+                            <p style="color: #aaa; font-size: 0.82em; margin: 0 0 0.12em 0;">משותף — עולה ל-GitHub עם הקוד</p>
+                            <div style="background: rgba(0,0,0,0.3); border-radius: 4px; padding: 0.15em 0.4em; font-family: 'Courier New', monospace; font-size: 0.82em; direction: ltr; text-align: left; line-height: 1.6;">
                                 [project-folder]/.claude/
                             </div>
-                            <div style="margin-top: 0.15em; font-size: 0.85em; line-height: 1.5;">
+                            <div style="margin-top: 0.12em; font-size: 0.85em; line-height: 1.5;">
                                 📄 CLAUDE.md <span style="color:#aaa;">(הוראות לפרויקט)</span><br>
-                                🤖 agents/ &nbsp; ⚡ skills/<br>
-                                ⚙️ settings.json
+                                🤖 agents/ &nbsp; ⚡ skills/ &nbsp; ⚙️ settings.json
                             </div>
                         </div>
 
@@ -811,8 +811,7 @@
                         <div class="success-box" style="padding: 0.15em 0.4em;">
                             <p style="font-size: 0.72em; margin: 0;">
                                 💡 <strong>CLAUDE.md</strong> = אתם כותבים הוראות &nbsp;|&nbsp;
-                                <strong>Memory</strong> = Claude כותב לעצמו בין sessions &nbsp;|&nbsp;
-                                <span style="color: #aaa;">ה-Toolkit כבר כולל .claude/ מוכן</span>
+                                <span style="color: #aaa;">ה-Toolkit שהורדתם כבר כולל .claude/ מוכן עם agents ו-skills</span>
                             </p>
                         </div>
                     </div>
@@ -867,15 +866,11 @@
                     </table>
                 </div>
 
-                <div class="fragment visual-card" style="margin-top: 0.35em;">
-                    <p style="font-size: 0.85em; margin: 0;">💡 <em>הם עובדים יחד: Agent מנתח → Skill מפיק את הפלט
-                            הסופי</em></p>
-                </div>
-
                 <aside class="notes">
                     "Agents: Claude מקבל משימה, יוצא לשיחה נפרדת, חוזר עם תוצאה."
                     "Skills: /skill-name — ממשיך בשיחה הנוכחית, עם הקשר מלא."
                     "היום נשתמש בAgent לניתוח באגים ובSkill לעדכון stakeholders."
+                    "בפועל הם עובדים יחד — Agent מנתח, Skill מפיק פלט סופי."
                 </aside>
             </section>
 
@@ -998,7 +993,7 @@
                     <div class="result-card fragment">
                         <div class="result-icon">📊</div>
                         <div class="result-title">דוח עדיפויות</div>
-                        <p style="font-size: 0.72em;">50 באגים → top 10 ב-3 דקות</p>
+                        <p style="font-size: 0.72em;">50 באגים ← top 10 ב-3 דקות</p>
                     </div>
                     <div class="result-card fragment">
                         <div class="result-icon">📤</div>
@@ -1010,8 +1005,7 @@
                 <div class="fragment" style="margin-top: 0.3em;">
                     <div class="success-box" style="max-width: 90%; margin: 0 auto;">
                         <p style="font-size: 0.78em; margin: 0;">
-                            🎯 <strong>מחר בבוקר:</strong> פתחו Claude Code עם הפרויקט האמיתי שלכם — שנו CLAUDE.md →
-                            התחילו<br>
+                            🎯 <strong>מחר בבוקר:</strong> פתחו Claude Code עם הפרויקט האמיתי שלכם — שנו CLAUDE.md ← התחילו<br>
                             <span style="color: #aaa; font-size: 0.9em;">✨ בונוס אם נשאר זמן: נוסיף ניתוח פידבק ונראה
                                 חיבורים לבאגים</span>
                         </p>
@@ -1029,29 +1023,32 @@
             <!-- ═══════════════════════════════════════════════
                  Slide 15: Thank You
             ════════════════════════════════════════════════ -->
-            <section class="center" style="position: relative;">
-                <!-- LinkedIn QR Code on the left -->
-                <img src="images/linkedin_qr.jpg" alt="LinkedIn QR Code"
-                    style="position: absolute; left: -10px; top: 15%; transform: translateY(-20%); width: 280px; height: 280px; border: 3px solid #42affa; border-radius: 12px; padding: 5px; background: white; z-index: 10;">
-
+            <section class="center">
                 <h2>תודה! 🙏</h2>
-                <div style="margin: 0.8em 0;">
-                    <p style="font-size: 1.15em;"><strong>יונתן קרמר</strong></p>
-                    <p style="font-size: 0.85em; margin: 0.2em 0;">Product &amp; Builder as a Service</p>
-                    <p style="margin: 0.6em 0;">
-                        <a href="https://www.linkedin.com/in/yonatank/" style="color: #42affa; font-size: 0.95em;">
-                            LinkedIn: yonatank
-                        </a>
-                    </p>
-                    <p style="margin: 0.3em 0;">
-                        <a href="https://github.com/yonyosk/claude-code-workshop"
-                            style="color: #42affa; font-size: 0.85em;">
-                            github.com/yonyosk/claude-code-workshop
-                        </a>
-                    </p>
-                </div>
-                <div style="margin-top: 1em; font-size: 1.2em;">
-                    <p><strong>שאלות? 🤔</strong></p>
+
+                <div style="display: grid; grid-template-columns: 220px 1fr; gap: 1.8em; align-items: center; max-width: 780px; margin: 0.5em auto 0;">
+                    <!-- LinkedIn QR -->
+                    <div style="text-align: center;">
+                        <img src="images/linkedin_qr.jpg" alt="LinkedIn QR Code"
+                            style="width: 210px; height: 210px; border: 3px solid #42affa; border-radius: 12px; padding: 5px; background: white; display: block; margin: 0 auto;">
+                        <p style="font-size: 0.6em; color: #aaa; margin-top: 0.3em;">סרקו להתחבר</p>
+                    </div>
+                    <!-- Contact info -->
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.15em; margin: 0 0 0.15em 0;"><strong>יונתן קרמר</strong></p>
+                        <p style="font-size: 0.85em; margin: 0 0 0.5em 0; color: #ccc;">Product &amp; Builder as a Service</p>
+                        <p style="margin: 0.3em 0;">
+                            <a href="https://www.linkedin.com/in/yonatank/" style="color: #42affa; font-size: 0.95em;">
+                                LinkedIn: yonatank
+                            </a>
+                        </p>
+                        <p style="margin: 0.3em 0;">
+                            <a href="https://github.com/yonyosk/claude-code-workshop" style="color: #42affa; font-size: 0.82em;">
+                                github.com/yonyosk/claude-code-workshop
+                            </a>
+                        </p>
+                        <p style="margin-top: 0.7em; font-size: 1.1em;"><strong>שאלות? 🤔</strong></p>
+                    </div>
                 </div>
                 <aside class="notes">
                     "הסלייד הבא — QR code ל-Toolkit. השאירו אותו על המסך בזמן השאלות."
