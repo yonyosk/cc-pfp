@@ -13,7 +13,7 @@ claude
 הדבק את זה ל-Claude Code:
 ```
 תריץ עבורי:
-git clone https://github.com/yonyosk/claude-code-workshop workshop
+git clone https://github.com/yonyosk/cc-pfp workshop
 cd workshop
 ```
 
