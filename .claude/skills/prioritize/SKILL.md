@@ -1,12 +1,12 @@
+---
+name: prioritize
+description: Use when you need to prioritize a list of tasks, features, or bugs using established PM frameworks (Impact/Effort, RICE, MoSCoW).
+---
+
 # Skill: /prioritize
 
 ## Purpose
 Prioritize a list of tasks, features, or bugs using established frameworks (Impact/Effort, RICE, MoSCoW).
-
-## Trigger
-```
-/prioritize [list of items or file path]
-```
 
 ## What It Does
 1. Takes a list of items to prioritize
@@ -69,7 +69,6 @@ Which prioritization approach?
 
 ## Impact/Effort Matrix
 
-```
          HIGH IMPACT
               │
   ┌───────────┼───────────┐
@@ -87,7 +86,6 @@ Which prioritization approach?
          LOW IMPACT
 
   HIGH EFFORT ◄───► LOW EFFORT
-```
 
 ---
 
@@ -140,14 +138,11 @@ Which prioritization approach?
 
 ### Must Have (Non-negotiable)
 - [Item] - [Justification]
-- [Item] - [Justification]
 
 ### Should Have (Important)
 - [Item] - [Justification]
-- [Item] - [Justification]
 
 ### Could Have (Nice to have)
-- [Item]
 - [Item]
 
 ### Won't Have (This cycle)
@@ -163,25 +158,9 @@ Which prioritization approach?
 
 ### Next Sprint/Week
 3. [Item] - [Reason]
-4. [Item] - [Reason]
 
 ### Later/Backlog
-5. [Item]
-6. [Item]
-
----
-
-## Dependencies
-
-```
-[Item A] ──► [Item B] ──► [Item C]
-               │
-               └──► [Item D]
-```
-
-| Item | Depends On | Blocks |
-|------|------------|--------|
-| [Item] | [Deps] | [What it blocks] |
+4. [Item]
 
 ---
 
@@ -255,8 +234,6 @@ Saved to: planning/prioritization-[date].md
 **Avoid/Defer:**
 - Build mobile app (Too large for current cycle)
 - Redesign dashboard (Needs research first)
-
-## Recommended Sequence
 
 ### This Sprint
 1. **Fix login bug** - Critical, users being logged out

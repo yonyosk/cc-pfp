@@ -1,12 +1,12 @@
-# Skill: /user-stories
+---
+name: create-user-stories
+description: Use when you need to generate well-formatted user stories with acceptance criteria from a feature description, PRD, or verbal explanation.
+---
+
+# Skill: /create-user-stories
 
 ## Purpose
 Generate well-formatted user stories with acceptance criteria from a feature description or PRD.
-
-## Trigger
-```
-/user-stories [feature description or PRD file path]
-```
 
 ## What It Does
 1. Reads the feature/PRD context
@@ -18,7 +18,7 @@ Generate well-formatted user stories with acceptance criteria from a feature des
 
 ## Skill Instructions
 
-When the user triggers `/user-stories`:
+When the user triggers `/create-user-stories`:
 
 ### Step 1: Understand Context
 If no file provided, ask:
@@ -82,11 +82,6 @@ Then [expected result]
 
 ---
 
-### Story 2: [Short Title]
-[Same format...]
-
----
-
 ## Summary
 
 | ID | Title | Priority | Points | Dependencies |
@@ -129,7 +124,7 @@ Ready for sprint planning!
 
 ## Example Usage
 
-**User:** `/user-stories checkout flow`
+**User:** `/create-user-stories checkout flow`
 
 **Claude:**
 ```
@@ -165,10 +160,9 @@ And the cart icon shows the updated count
 Given I already have the item in cart
 When I click "Add to Cart" again
 Then the quantity increases by 1
-...
 ```
 
 ## Time Saved
 - Manual story writing: 1.5-2 hours per feature
-- With /user-stories: 10-15 minutes
+- With /create-user-stories: 10-15 minutes
 - **Savings: ~1.5 hours per feature**

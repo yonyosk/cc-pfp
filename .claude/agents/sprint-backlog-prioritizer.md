@@ -1,6 +1,6 @@
 ---
 name: sprint-backlog-prioritizer
-description: Use this agent when you need to prioritize a sprint backlog or list of candidate items for an upcoming sprint. Activated when: user provides a backlog file or list of items and wants a recommended sprint scope. The agent considers effort estimates, business impact, dependencies, and bug severity.
+description: "Use this agent when you need to prioritize a sprint backlog or list of candidate items for an upcoming sprint. Activated when: user provides a backlog file or list of items and wants a recommended sprint scope. The agent considers effort estimates, business impact, dependencies, and bug severity."
 model: inherit
 color: green
 ---

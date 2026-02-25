@@ -1,12 +1,12 @@
+---
+name: write-stakeholder-update
+description: Use when you need to turn a technical report, analysis, or prioritization doc into a clear stakeholder update ready to send via Slack, email, or Notion/Confluence.
+---
+
 # Skill: /write-stakeholder-update
 
 ## Purpose
 Turn a technical report, prioritization doc, or analysis into a clear, actionable stakeholder update — ready to send via Slack, email, or paste into a doc.
-
-## Trigger
-```
-/write-stakeholder-update
-```
 
 ## What It Does
 1. Asks: who is the audience, what's the context, what format?
