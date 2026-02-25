@@ -37,7 +37,7 @@ Read CLAUDE.md and summarize this project
 ## שלב 5: ניתוח הבאגים (Hands-on Step 1)
 
 ```
-תנתח את example-files/bug-reports.txt ותיצור דוח עדיפויות
+I have bug reports, user feedback, and a sprint backlog in example-files/ — analyze them and tell me what to prioritize this week. use any relevant skills and expert agents
 ```
 
 ## שלב 6: עדכון לבעלי עניין (Hands-on Step 2)
