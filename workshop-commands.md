@@ -1,26 +1,27 @@
 # פקודות לסדנה — Copy-Paste מוכן
 
 ## שלב 1: התקנה
-
+macOS, Linux, WSL:
 ```bash
-npm install -g @anthropic-ai/claude-code
-claude --version
-claude
+curl -fsSL https://claude.ai/install.sh | bash
+```
+Windows PowerShell:
+```bash
+irm https://claude.ai/install.ps1 | iex
 ```
 
 ## שלב 2: Clone עם Claude Code
 
 הדבק את זה ל-Claude Code:
+
 ```
-תריץ עבורי:
-git clone https://github.com/yonyosk/cc-pfp workshop
-cd workshop
+Download and set up the GitHub project at https://github.com/yonyosk/cc-pfp
 ```
 
 ## שלב 3: התיישרות עם הפרויקט
 
 ```
-קרא את קובץ CLAUDE.md ותסכם לי את הפרויקט שאנחנו עובדים עליו.
+Read CLAUDE.md and summarize this project
 ```
 
 ## שלב 4: הכרת הסוכנים והסקילים
@@ -36,9 +37,7 @@ cd workshop
 ## שלב 5: ניתוח הבאגים (Hands-on Step 1)
 
 ```
-תנתח את קובץ example-files/bug-reports.txt ותיצור דוח עדיפויות.
-חשוב להתחשב בחומרת הבאג, מספר המשתמשים המושפעים, ואזור הבעיה.
-הוצא: TOP 10 באגים לתיקון עם הסבר, ו-5 באגים לדחות.
+תנתח את example-files/bug-reports.txt ותיצור דוח עדיפויות
 ```
 
 ## שלב 6: עדכון לבעלי עניין (Hands-on Step 2)
@@ -48,6 +47,7 @@ cd workshop
 ```
 
 כשהסקיל שואל — ספקו:
+
 - קהל: VP Product + CTO
 - נושא: סיכום עדיפויות באגים לשבוע הקרוב
 - פורמט: הודעת Slack קצרה (עד 150 מילה)
