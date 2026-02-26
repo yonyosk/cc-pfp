@@ -71,7 +71,7 @@ A 90-minute hands-on IRL Claude Code workshop for the "Product for Product" comm
 ```
 product-for-product-workshop/
 ├── README.md                          # Hebrew guide — open this in Claude Code first
-├── CLAUDE.md                          # Pre-filled: company PM, B2B SaaS "TaskFlow"
+├── CLAUDE.md                          # Pre-filled: company PM, B2B SaaS "Telos"
 ├── .claude/
 │   ├── agents/
 │   │   ├── bug-priority-analyzer.md   # ⭐ Main workshop agent (to be created separately)
@@ -83,13 +83,13 @@ product-for-product-workshop/
 │       ├── write-stakeholder-update.md  # NEW
 │       └── create-user-stories.md     # Reused from Meetup 4
 ├── example-files/
-│   ├── bug-reports.txt                # 50 bugs, TaskFlow B2B SaaS (Hebrew)
+│   ├── bug-reports.txt                # 50 bugs, Telos B2B SaaS (Hebrew)
 │   ├── user-feedback.txt              # 30 feedback items (Hebrew)
 │   └── sprint-backlog.txt             # 20 sprint tasks (Hebrew)
 └── workshop-commands.md               # Copy-paste Hebrew prompts for each step
 ```
 
-**Fictional product:** "TaskFlow" — a B2B SaaS project management tool. Generic enough that all company PMs can relate.
+**Fictional product:** "Telos" — a B2B SaaS project management tool. Generic enough that all company PMs can relate.
 
 **Note on agents:** `bug-priority-analyzer.md` will be created separately using the agent creator and added manually to the repo.
 
@@ -129,11 +129,11 @@ product-for-product-workshop/
 
 | File | Notes |
 |------|-------|
-| `CLAUDE.md` | Company PM template, pre-filled with TaskFlow SaaS context |
+| `CLAUDE.md` | Company PM template, pre-filled with Telos SaaS context |
 | `README.md` | Hebrew guide, opened in Claude Code as first action |
-| `bug-reports.txt` | 50 realistic bugs, TaskFlow, Hebrew |
-| `user-feedback.txt` | 30 feedback items, TaskFlow, Hebrew |
-| `sprint-backlog.txt` | 20 sprint tasks, TaskFlow, Hebrew |
+| `bug-reports.txt` | 50 realistic bugs, Telos, Hebrew |
+| `user-feedback.txt` | 30 feedback items, Telos, Hebrew |
+| `sprint-backlog.txt` | 20 sprint tasks, Telos, Hebrew |
 | `workshop-commands.md` | Hebrew prompts for each step |
 | `write-stakeholder-update.md` | New skill |
 | `sprint-backlog-prioritizer.md` | New agent |

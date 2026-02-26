@@ -67,9 +67,9 @@ PFP-Workshop/
 - **.claude/skills/** — פקודות מהירות לתוצרים קבועים
 - **example-files/** — קבצי דוגמה לתרגול
 
-## מוצר הדוגמה: TaskFlow
+## מוצר הדוגמה: Telos
 
-כל קבצי הדוגמה מתייחסים ל-**TaskFlow** — פלטפורמת ניהול פרויקטים B2B SaaS.
+כל קבצי הדוגמה מתייחסים ל-**Telos** — פלטפורמת ניהול פרויקטים B2B SaaS.
 השתמשו בה כבסיס לתרגול, ואחר כך החליפו לפרויקט האמיתי שלכם.
 
 ## איך להתחיל?
@@ -101,16 +101,16 @@ Open the file in your MD reader. Confirm Hebrew renders correctly, structure is 
 **Step 1: Write the file**
 
 ```markdown
-# TaskFlow — Product Context
+# Telos — Product Context
 
 ## Product Overview
-**Product:** TaskFlow
+**Product:** Telos
 **Type:** B2B SaaS — Project Management Platform
 **Stage:** Growth (Series B)
 **Team size:** 45 employees (12 in product & engineering)
 
 ## What We Build
-TaskFlow helps mid-size companies (50–500 employees) manage cross-team projects.
+Telos helps mid-size companies (50–500 employees) manage cross-team projects.
 Core features: task management, sprint planning, team dashboards, integrations (Slack, Jira, GitHub).
 
 ## Our Users
@@ -176,7 +176,7 @@ Confirm the company PM context is clear. Confirm it's distinct from the freelanc
 
 **Step 1: Write the file**
 
-This file needs 50 realistic B2B SaaS bugs for TaskFlow. Write in Hebrew. Mix of severities (Critical/High/Medium/Low) and areas (performance, UI, integrations, notifications, auth). Format each bug consistently:
+This file needs 50 realistic B2B SaaS bugs for Telos. Write in Hebrew. Mix of severities (Critical/High/Medium/Low) and areas (performance, UI, integrations, notifications, auth). Format each bug consistently:
 
 ```
 ---
@@ -275,7 +275,7 @@ Vary severity: ~5 קריטי, ~15 גבוה, ~20 בינוני, ~10 נמוך
 
 **Step 1: Write the file**
 
-30 feedback items from TaskFlow users. Mix of: support tickets, app store reviews, NPS follow-ups, in-app feedback. Hebrew. Format:
+30 feedback items from Telos users. Mix of: support tickets, app store reviews, NPS follow-ups, in-app feedback. Hebrew. Format:
 
 ```
 ---

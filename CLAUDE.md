@@ -1,13 +1,13 @@
-# TaskFlow — Product Context
+# Telos — Product Context
 
 ## Product Overview
-**Product:** TaskFlow
+**Product:** Telos
 **Type:** B2B SaaS — Project Management Platform
 **Stage:** Growth (Series B)
 **Team size:** 45 employees (12 in product & engineering)
 
 ## What We Build
-TaskFlow helps mid-size companies (50–500 employees) manage cross-team projects.
+Telos helps mid-size companies (50–500 employees) manage cross-team projects.
 Core features: task management, sprint planning, team dashboards, integrations (Slack, Jira, GitHub).
 
 ## Our Users
